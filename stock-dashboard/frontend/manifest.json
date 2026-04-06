@@ -1,0 +1,13 @@
+{
+    "name": "Stock Dashboard",
+    "short_name": "Stocks",
+    "description": "실시간 한국/미국 주식 분석 대시보드",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0e17",
+    "theme_color": "#3b82f6",
+    "orientation": "any",
+    "icons": [
+        { "src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    ]
+}
