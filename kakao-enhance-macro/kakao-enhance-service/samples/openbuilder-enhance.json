@@ -1,0 +1,34 @@
+{
+  "action": {
+    "id": "enhance-skill",
+    "name": "enhance",
+    "params": {
+      "targetLevel": "19"
+    },
+    "detailParams": {
+      "targetLevel": {
+        "origin": "19",
+        "value": "19",
+        "groupName": ""
+      }
+    }
+  },
+  "intent": {
+    "id": "intent-enhance",
+    "name": "enhance"
+  },
+  "bot": {
+    "id": "bot-1",
+    "name": "enhance-bot"
+  },
+  "userRequest": {
+    "utterance": "강화 19",
+    "user": {
+      "id": "demo-user",
+      "type": "aiin",
+      "properties": {
+        "botUserKey": "demo-user"
+      }
+    }
+  }
+}

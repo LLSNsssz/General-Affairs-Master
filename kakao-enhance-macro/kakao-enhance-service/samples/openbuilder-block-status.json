@@ -1,0 +1,26 @@
+{
+  "action": {
+    "id": "status-block",
+    "name": "status",
+    "params": {},
+    "detailParams": {}
+  },
+  "intent": {
+    "id": "intent-status-block",
+    "name": "status"
+  },
+  "bot": {
+    "id": "bot-1",
+    "name": "enhance-bot"
+  },
+  "userRequest": {
+    "utterance": "",
+    "user": {
+      "id": "split-user",
+      "type": "aiin",
+      "properties": {
+        "botUserKey": "split-user"
+      }
+    }
+  }
+}

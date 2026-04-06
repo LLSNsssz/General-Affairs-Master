@@ -1,0 +1,34 @@
+{
+  "action": {
+    "id": "enhance-block",
+    "name": "enhance",
+    "params": {
+      "targetLevel": "6"
+    },
+    "detailParams": {
+      "targetLevel": {
+        "origin": "6",
+        "value": "6",
+        "groupName": ""
+      }
+    }
+  },
+  "intent": {
+    "id": "intent-enhance-block",
+    "name": "enhance"
+  },
+  "bot": {
+    "id": "bot-1",
+    "name": "enhance-bot"
+  },
+  "userRequest": {
+    "utterance": "",
+    "user": {
+      "id": "split-user",
+      "type": "aiin",
+      "properties": {
+        "botUserKey": "split-user"
+      }
+    }
+  }
+}

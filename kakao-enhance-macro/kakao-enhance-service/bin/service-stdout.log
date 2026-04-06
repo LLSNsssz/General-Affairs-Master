@@ -1,0 +1,9 @@
+Store path: C:\Users\GS002\Documents\codex\kakao-enhance-macro\kakao-enhance-service\bin\data\store.json
+Kakao Enhance Service
+Listening on http://localhost:5088/
+GET  /health
+GET  /players
+POST /players/{playerId}
+POST /commands/enhance
+POST /kakao/channel/webhook
+Press Ctrl+C to stop.

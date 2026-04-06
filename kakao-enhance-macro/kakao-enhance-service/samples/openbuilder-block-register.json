@@ -1,0 +1,40 @@
+{
+  "action": {
+    "id": "register-block",
+    "name": "register",
+    "params": {
+      "playerName": "분리검",
+      "currentLevel": "2"
+    },
+    "detailParams": {
+      "playerName": {
+        "origin": "분리검",
+        "value": "분리검",
+        "groupName": ""
+      },
+      "currentLevel": {
+        "origin": "2",
+        "value": "2",
+        "groupName": ""
+      }
+    }
+  },
+  "intent": {
+    "id": "intent-register-block",
+    "name": "register"
+  },
+  "bot": {
+    "id": "bot-1",
+    "name": "enhance-bot"
+  },
+  "userRequest": {
+    "utterance": "",
+    "user": {
+      "id": "split-user",
+      "type": "aiin",
+      "properties": {
+        "botUserKey": "split-user"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "action": {
+    "id": "register-skill",
+    "name": "register",
+    "params": {
+      "playerName": "실전검",
+      "currentLevel": "3"
+    },
+    "detailParams": {
+      "playerName": {
+        "origin": "실전검",
+        "value": "실전검",
+        "groupName": ""
+      },
+      "currentLevel": {
+        "origin": "3",
+        "value": "3",
+        "groupName": ""
+      }
+    }
+  },
+  "intent": {
+    "id": "intent-register",
+    "name": "register"
+  },
+  "bot": {
+    "id": "bot-1",
+    "name": "enhance-bot"
+  },
+  "userRequest": {
+    "utterance": "등록 실전검 3",
+    "user": {
+      "id": "demo-user",
+      "type": "aiin",
+      "properties": {
+        "botUserKey": "demo-user"
+      }
+    }
+  }
+}

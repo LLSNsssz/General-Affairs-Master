@@ -1,0 +1,362 @@
+:root {
+  color-scheme: light;
+  --paper: #f7ef9d;
+  --paper-deep: #ecd978;
+  --paper-shadow: rgba(113, 90, 18, 0.18);
+  --ink: #342b19;
+  --ink-soft: #66573c;
+  --accent: #b8602b;
+  --accent-strong: #8f441c;
+  --card: rgba(255, 252, 223, 0.9);
+  --card-edge: rgba(108, 87, 22, 0.16);
+  --reader-font-size: 18px;
+  --reader-line-height: 1.9;
+  --reader-paragraph-gap: 18px;
+  --paper-lines: repeating-linear-gradient(
+    to bottom,
+    rgba(111, 95, 35, 0.08) 0px,
+    rgba(111, 95, 35, 0.08) 1px,
+    transparent 1px,
+    transparent 32px
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 420px;
+  max-width: 420px;
+  min-height: 600px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.42), transparent 28%),
+    linear-gradient(180deg, #f8f0b6 0%, #f4e285 100%);
+  color: var(--ink);
+  font-family: "Segoe UI Variable", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+body {
+  border: 1px solid rgba(98, 78, 18, 0.18);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 18px 10px;
+}
+
+.eyebrow,
+.card-kicker,
+.reader-meta,
+.muted,
+.statusbar p {
+  margin: 0;
+}
+
+.eyebrow,
+.card-kicker {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.topbar h1,
+.hero-card h2,
+.card h2,
+.reader-header h2,
+.reader-empty h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.02em;
+}
+
+.topbar h1 {
+  font-size: 28px;
+}
+
+.icon-button,
+.view-button,
+.primary-button,
+.secondary-button,
+.bookmark-link,
+.recent-link {
+  border: 0;
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.48);
+  color: var(--accent-strong);
+  box-shadow: inset 0 0 0 1px rgba(125, 87, 10, 0.12);
+}
+
+.view-switcher {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 0 18px 14px;
+}
+
+.view-button {
+  border-radius: 999px;
+  padding: 10px 12px;
+  background: rgba(255, 250, 205, 0.7);
+  color: var(--ink-soft);
+  box-shadow: inset 0 0 0 1px rgba(125, 87, 10, 0.08);
+}
+
+.view-button.is-active {
+  background: rgba(191, 111, 43, 0.12);
+  color: var(--accent-strong);
+  box-shadow: inset 0 0 0 1px rgba(143, 68, 28, 0.26);
+}
+
+.views {
+  flex: 1;
+  padding: 0 18px 14px;
+  overflow-y: auto;
+}
+
+.view {
+  display: none;
+  gap: 14px;
+}
+
+.view.is-active {
+  display: grid;
+}
+
+.card,
+.reader-paper {
+  border-radius: 18px;
+  padding: 16px;
+  background: var(--card);
+  box-shadow:
+    0 12px 28px var(--paper-shadow),
+    inset 0 0 0 1px var(--card-edge);
+  backdrop-filter: blur(10px);
+}
+
+.hero-card {
+  display: grid;
+  gap: 14px;
+}
+
+.muted {
+  margin-top: 8px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.primary-button,
+.secondary-button,
+.bookmark-link,
+.recent-link {
+  width: 100%;
+  border-radius: 14px;
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.primary-button {
+  background: linear-gradient(180deg, #c96f34 0%, #ab531f 100%);
+  color: #fff9ef;
+  box-shadow: 0 8px 16px rgba(171, 83, 31, 0.25);
+}
+
+.secondary-button {
+  background: rgba(255, 255, 255, 0.54);
+  color: var(--accent-strong);
+  box-shadow: inset 0 0 0 1px rgba(143, 68, 28, 0.16);
+}
+
+.bookmark-list,
+.recent-list {
+  display: grid;
+  gap: 10px;
+}
+
+.bookmark-link,
+.recent-link {
+  background: rgba(255, 251, 228, 0.76);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px rgba(125, 87, 10, 0.08);
+}
+
+.bookmark-title,
+.recent-title {
+  display: block;
+  font-weight: 600;
+}
+
+.bookmark-meta,
+.recent-meta,
+.recent-excerpt {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.bookmark-form,
+.settings-list {
+  display: grid;
+  gap: 12px;
+}
+
+.bookmark-form label,
+.setting-row {
+  display: grid;
+  gap: 8px;
+}
+
+.bookmark-form span,
+.setting-row span,
+.checkbox-row span {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.bookmark-form input,
+.setting-row input[type="range"] {
+  width: 100%;
+}
+
+.bookmark-form input[type="text"],
+.bookmark-form input[type="url"] {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px rgba(125, 87, 10, 0.12);
+}
+
+.setting-row div {
+  display: grid;
+  gap: 8px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-row input {
+  width: 16px;
+  height: 16px;
+}
+
+.reader-paper {
+  position: relative;
+  min-height: 470px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28), transparent 22%),
+    var(--paper);
+}
+
+.reader-paper.is-ruled::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--paper-lines);
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.reader-empty,
+.reader-content {
+  position: relative;
+  z-index: 1;
+}
+
+.reader-empty {
+  display: grid;
+  place-items: center;
+  min-height: 430px;
+  text-align: center;
+}
+
+.reader-header {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(96, 76, 17, 0.16);
+}
+
+.reader-header h2 {
+  margin-top: 6px;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.reader-meta {
+  margin-top: 8px;
+  color: rgba(52, 43, 25, 0.72);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.reader-body {
+  padding-top: 18px;
+  font-size: var(--reader-font-size);
+  line-height: var(--reader-line-height);
+}
+
+.reader-body p {
+  margin: 0 0 var(--reader-paragraph-gap);
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.empty-note {
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.45);
+  color: var(--ink-soft);
+  text-align: center;
+  box-shadow: inset 0 0 0 1px rgba(125, 87, 10, 0.08);
+}
+
+.statusbar {
+  padding: 0 18px 18px;
+}
+
+.statusbar p {
+  min-height: 20px;
+  font-size: 12px;
+  color: rgba(52, 43, 25, 0.74);
+}

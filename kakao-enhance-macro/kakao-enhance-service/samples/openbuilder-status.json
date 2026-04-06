@@ -1,0 +1,26 @@
+{
+  "action": {
+    "id": "status-skill",
+    "name": "status",
+    "params": {},
+    "detailParams": {}
+  },
+  "intent": {
+    "id": "intent-status",
+    "name": "status"
+  },
+  "bot": {
+    "id": "bot-1",
+    "name": "enhance-bot"
+  },
+  "userRequest": {
+    "utterance": "상태",
+    "user": {
+      "id": "demo-user",
+      "type": "aiin",
+      "properties": {
+        "botUserKey": "demo-user"
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "sticky-lupin-desktop",
+  "version": "0.2.5",
+  "private": true,
+  "description": "Compact memo-inspired desktop reader built with Electron.",
+  "author": "GS002",
+  "main": "main.js",
+  "scripts": {
+    "build:ts": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "npm run build:ts && node scripts/start-dev.js",
+    "dist:win": "npm run build:ts && electron-builder --win portable"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.12",
+    "typescript": "^5.9.3"
+  },
+  "build": {
+    "appId": "com.stickylupin.desktop",
+    "productName": "Sticky Lupin Reader",
+    "asar": true,
+    "npmRebuild": false,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "assets/**/*",
+      "renderer/**/*",
+      "package.json",
+      "!release/**/*",
+      "!.runtime/**/*",
+      "!.tools/**/*"
+    ],
+    "win": {
+      "icon": "assets/sticky-lupin.ico",
+      "target": [
+        "portable"
+      ],
+      "artifactName": "${productName}-${version}-windows.${ext}"
+    }
+  }
+}

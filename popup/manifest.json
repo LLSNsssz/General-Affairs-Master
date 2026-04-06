@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Sticky Lupin Reader",
+  "description": "Sticky-note style popup reader for text-heavy web novel pages.",
+  "version": "0.1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Sticky Lupin Reader",
+    "default_popup": "popup.html"
+  }
+}

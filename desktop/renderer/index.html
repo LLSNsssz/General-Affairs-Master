@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sticky Lupin Desktop</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="compact-shell">
+      <section class="note browser-note">
+        <div class="paper-fold" aria-hidden="true"></div>
+
+        <header class="browser-toolbar">
+          <div class="drag-strip" aria-hidden="true"></div>
+          <button id="title-hit-area" class="title-hit-area" type="button" aria-label="Toggle fold"></button>
+
+          <div class="window-dots">
+            <button id="toggle-help" class="window-dot" type="button" aria-label="Open shortcuts help">?</button>
+            <button id="close-window" class="window-dot red" type="button" aria-label="Close window">X</button>
+          </div>
+        </header>
+
+        <div class="drawer-toggle-row">
+          <div class="drawer-button-group">
+            <button id="toggle-bookmarks" class="chip-button" type="button">LINKS</button>
+            <button id="toggle-history" class="chip-button" type="button">RECENT</button>
+            <button id="toggle-settings" class="chip-button" type="button">PREFS</button>
+          </div>
+          <p class="caption-copy">Press Enter to open</p>
+        </div>
+
+        <section class="drawer-layer">
+          <div id="bookmark-drawer" class="drawer-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Bookmarks</p>
+                <h2>Quick Launch</h2>
+              </div>
+            </div>
+            <div id="bookmark-list" class="bookmark-list"></div>
+            <form id="bookmark-form" class="bookmark-form">
+              <label>
+                <span>Name</span>
+                <input id="bookmark-name" name="name" type="text" maxlength="24" placeholder="My Shelf" required />
+              </label>
+              <label>
+                <span>URL</span>
+                <input id="bookmark-url" name="url" type="url" placeholder="https://example.com" required />
+              </label>
+              <button class="secondary-button" type="submit">Save Bookmark</button>
+            </form>
+          </div>
+
+          <div id="recent-drawer" class="drawer-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Recent</p>
+                <h2>History</h2>
+              </div>
+            </div>
+            <div id="recent-list" class="recent-list"></div>
+          </div>
+
+          <div id="settings-drawer" class="drawer-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Settings</p>
+                <h2>Display</h2>
+              </div>
+            </div>
+            <div class="settings-list">
+              <label class="setting-row" for="font-size">
+                <span>Font Size</span>
+                <div>
+                  <input id="font-size" type="range" min="14" max="28" step="1" />
+                  <output id="font-size-value" for="font-size"></output>
+                </div>
+              </label>
+              <label class="setting-row" for="line-height">
+                <span>Line Height</span>
+                <div>
+                  <input id="line-height" type="range" min="1.4" max="2.4" step="0.1" />
+                  <output id="line-height-value" for="line-height"></output>
+                </div>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="browser-stage">
+          <webview
+            id="reader-webview"
+            class="reader-webview"
+            partition="persist:sticky-lupin-reader"
+            allowpopups="false"
+          ></webview>
+
+          <div id="stage-placeholder" class="stage-placeholder">
+            <p class="eyebrow">Loading</p>
+            <h2>Preparing the reading board</h2>
+            <p class="muted">The page is being refreshed inside the embedded browser.</p>
+          </div>
+        </section>
+
+        <div id="site-switch-toast" class="site-switch-toast is-hidden" aria-live="polite"></div>
+
+        <aside id="help-popup" class="help-popup is-hidden" role="dialog" aria-modal="false" aria-labelledby="help-popup-title">
+          <div class="help-popup-header">
+            <div>
+              <p class="eyebrow">Shortcuts</p>
+              <h2 id="help-popup-title">Quick Guide</h2>
+            </div>
+            <button id="close-help" class="help-close-button" type="button" aria-label="Close shortcuts help">Close</button>
+          </div>
+
+          <div class="help-shortcut-list">
+            <div class="help-shortcut-row">
+              <span>Site switch</span>
+              <kbd>Ctrl+1..5</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Site login</span>
+              <kbd>Ctrl+Shift+1..5</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Current login</span>
+              <kbd>Ctrl+L</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Go back</span>
+              <kbd>Alt+Left / Ctrl+[</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Next site</span>
+              <kbd>Ctrl+Tab</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Prev site</span>
+              <kbd>Ctrl+Shift+Tab</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Bookmarks</span>
+              <kbd>Ctrl+B</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Recent</span>
+              <kbd>Ctrl+H</kbd>
+            </div>
+            <div class="help-shortcut-row">
+              <span>Settings</span>
+              <kbd>Ctrl+,</kbd>
+            </div>
+          </div>
+
+          <details class="help-site-section">
+            <summary class="help-site-summary">Site Buttons</summary>
+            <div class="help-site-panel">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Sites</p>
+                  <h2>Open Or Login</h2>
+                </div>
+              </div>
+              <div id="site-help-list" class="site-help-list"></div>
+            </div>
+          </details>
+        </aside>
+
+        <footer class="browser-status">
+          <div>
+            <p class="eyebrow">Status</p>
+            <p id="status-text" class="status-copy">Ready</p>
+          </div>
+          <div>
+            <p class="eyebrow">Page</p>
+            <p id="page-title" class="status-copy">novelpia.com</p>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sticky Lupin Reader</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Sticky Lupin</p>
+          <h1>Reader</h1>
+        </div>
+        <button id="refresh-reader" class="icon-button" type="button" title="Refresh reader from current tab">
+          <span aria-hidden="true">R</span>
+        </button>
+      </header>
+
+      <nav class="view-switcher" aria-label="View switcher">
+        <button data-view="home" class="view-button is-active" type="button">Home</button>
+        <button data-view="reader" class="view-button" type="button">Reader</button>
+        <button data-view="settings" class="view-button" type="button">Settings</button>
+      </nav>
+
+      <main class="views">
+        <section id="home-view" class="view is-active" aria-labelledby="home-heading">
+          <section class="card hero-card">
+            <div>
+              <p class="card-kicker">Current tab</p>
+              <h2 id="home-heading">Extract chapter text into a compact popup reader</h2>
+              <p class="muted">
+                Read the current chapter in a sticky-note styled popup without images or extra page clutter.
+              </p>
+            </div>
+            <button id="read-current-tab" class="primary-button" type="button">Read Current Tab</button>
+          </section>
+
+          <section class="card">
+            <div class="section-heading">
+              <div>
+                <p class="card-kicker">Bookmarks</p>
+                <h2>Quick Access</h2>
+              </div>
+            </div>
+            <div id="bookmark-list" class="bookmark-list"></div>
+          </section>
+
+          <section class="card">
+            <div class="section-heading">
+              <div>
+                <p class="card-kicker">Add bookmark</p>
+                <h2>Add Custom Link</h2>
+              </div>
+            </div>
+            <form id="bookmark-form" class="bookmark-form">
+              <label>
+                <span>Name</span>
+                <input id="bookmark-name" name="name" type="text" maxlength="30" placeholder="My Library" required />
+              </label>
+              <label>
+                <span>URL</span>
+                <input id="bookmark-url" name="url" type="url" placeholder="https://example.com" required />
+              </label>
+              <button class="secondary-button" type="submit">Save Bookmark</button>
+            </form>
+          </section>
+
+          <section class="card">
+            <div class="section-heading">
+              <div>
+                <p class="card-kicker">Recent</p>
+                <h2>Recent Pages</h2>
+              </div>
+            </div>
+            <div id="recent-list" class="recent-list"></div>
+          </section>
+        </section>
+
+        <section id="reader-view" class="view" aria-labelledby="reader-heading">
+          <article class="reader-paper" id="reader-paper">
+            <div id="reader-empty" class="reader-empty">
+              <p class="card-kicker">Ready</p>
+              <h2 id="reader-heading">No chapter loaded yet</h2>
+              <p class="muted">Use Read Current Tab from Home to pull the page into the reader.</p>
+            </div>
+
+            <div id="reader-content" class="reader-content is-hidden">
+              <header class="reader-header">
+                <p id="reader-site" class="card-kicker"></p>
+                <h2 id="reader-title"></h2>
+                <p id="reader-meta" class="reader-meta"></p>
+              </header>
+              <div id="reader-body" class="reader-body"></div>
+            </div>
+          </article>
+        </section>
+
+        <section id="settings-view" class="view" aria-labelledby="settings-heading">
+          <section class="card">
+            <div class="section-heading">
+              <div>
+                <p class="card-kicker">Settings</p>
+                <h2 id="settings-heading">Reader Display</h2>
+              </div>
+            </div>
+            <div class="settings-list">
+              <label class="setting-row" for="font-size">
+                <span>Font Size</span>
+                <div>
+                  <input id="font-size" type="range" min="14" max="28" step="1" />
+                  <output id="font-size-value" for="font-size"></output>
+                </div>
+              </label>
+
+              <label class="setting-row" for="line-height">
+                <span>Line Height</span>
+                <div>
+                  <input id="line-height" type="range" min="1.4" max="2.4" step="0.1" />
+                  <output id="line-height-value" for="line-height"></output>
+                </div>
+              </label>
+
+              <label class="setting-row" for="paragraph-gap">
+                <span>Paragraph Gap</span>
+                <div>
+                  <input id="paragraph-gap" type="range" min="10" max="28" step="1" />
+                  <output id="paragraph-gap-value" for="paragraph-gap"></output>
+                </div>
+              </label>
+
+              <label class="checkbox-row" for="show-ruled-lines">
+                <input id="show-ruled-lines" type="checkbox" />
+                <span>Show Ruled Paper Lines</span>
+              </label>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="statusbar">
+        <p id="status-text">Ready</p>
+      </footer>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

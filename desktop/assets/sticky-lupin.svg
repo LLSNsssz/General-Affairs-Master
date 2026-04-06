@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title>Sticky Lupin Reader Icon</title>
+  <rect width="256" height="256" fill="#F1E57A"/>
+  <polygon points="198,0 256,0 256,58" fill="#FFF6B8"/>
+  <rect x="70" y="52" width="34" height="152" fill="#231F15"/>
+  <rect x="70" y="170" width="112" height="34" fill="#231F15"/>
+  <polygon points="120,58 156,58 208,110 172,110" fill="#231F15"/>
+</svg>
