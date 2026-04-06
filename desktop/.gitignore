@@ -4,4 +4,6 @@ release/
 .DS_Store
 Thumbs.db
 .runtime/
+.runtime-release-verify/
+.npm-cache/
 *.tsbuildinfo

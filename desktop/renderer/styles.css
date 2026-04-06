@@ -33,7 +33,7 @@ body {
 
 body,
 .drawer-panel,
-.reader-webview {
+.reader-stage-host {
   scrollbar-width: none;
 }
 
@@ -179,22 +179,27 @@ body.is-dragging-window .title-hit-area {
 }
 
 .window-dot {
-  width: 20px;
-  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
   border-radius: 0;
-  border: 1px solid rgba(110, 101, 42, 0.26);
+  border: 0;
   padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
   cursor: pointer;
   -webkit-app-region: no-drag;
   background: transparent;
   color: rgba(45, 40, 26, 0.84);
   font-size: 11px;
   line-height: 1;
+  outline: none;
 }
 
 .window-dot.is-active {
-  background: rgba(255, 248, 176, 0.66);
-  border-color: rgba(98, 89, 39, 0.34);
+  background: transparent;
 }
 
 .window-dot.red,
@@ -211,8 +216,7 @@ body.is-dragging-window .title-hit-area {
 }
 
 body.is-pinned #close-window {
-  border-color: rgba(98, 89, 39, 0.38);
-  box-shadow: inset 0 0 0 1px rgba(98, 89, 39, 0.16);
+  color: rgba(76, 69, 44, 0.96);
 }
 
 .tool-button,
@@ -390,7 +394,7 @@ body.is-pinned #close-window {
   box-shadow: none;
 }
 
-.reader-webview {
+.reader-stage-host {
   display: flex;
   width: 100%;
   height: calc(100vh - 56px);
@@ -406,9 +410,35 @@ body.is-pinned #close-window {
   text-align: center;
   background: var(--paper);
   pointer-events: none;
+  z-index: 2;
+  gap: 4px;
 }
 
 .stage-placeholder.is-hidden {
+  display: none;
+}
+
+.stage-placeholder .eyebrow.is-hidden,
+.stage-placeholder .muted.is-hidden {
+  display: none;
+}
+
+.stage-placeholder h2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(76, 69, 44, 0.72);
+}
+
+.stage-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--paper);
+  pointer-events: none;
+}
+
+.stage-cover.is-hidden {
   display: none;
 }
 
@@ -600,6 +630,10 @@ kbd {
   padding: 0 6px;
 }
 
+body.is-loading .browser-status {
+  display: none;
+}
+
 .empty-note {
   padding: 12px;
   border-radius: 0;
@@ -670,7 +704,7 @@ body.is-collapsed #close-window {
     align-items: start;
   }
 
-  .reader-webview {
+  .reader-stage-host {
     height: calc(100vh - 56px);
     min-height: 140px;
   }
