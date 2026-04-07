@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
-from config import HOST, PORT, CORS_ORIGINS
+from config import HOST, PORT, CORS_ORIGINS, SUPABASE_URL, SUPABASE_KEY
 from database import init_db
 from routers import stocks, analysis, signals, portfolio, news, investors
 
@@ -50,6 +50,15 @@ if os.path.isdir(FRONTEND_DIR):
     @app.get("/login")
     async def login_page():
         return FileResponse(os.path.join(FRONTEND_DIR, "login.html"))
+
+
+# 프론트엔드에 Supabase 공개 설정 전달 (anon key만)
+@app.get("/api/config/public")
+async def public_config():
+    return {
+        "supabase_url": SUPABASE_URL if SUPABASE_URL else None,
+        "supabase_key": SUPABASE_KEY if SUPABASE_KEY else None,
+    }
 
 
 @app.on_event("startup")

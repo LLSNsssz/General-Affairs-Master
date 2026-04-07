@@ -75,19 +75,24 @@ function setupSearch() {
     input.addEventListener('blur', () => setTimeout(() => results.classList.remove('show'), 200));
 }
 
-// --- Auth (임시 로컬 인증) ---
+// --- Auth ---
+function loadSavedAuth() {
+    try {
+        const saved = localStorage.getItem('auth_user');
+        if (saved) {
+            currentUser = JSON.parse(saved);
+        }
+    } catch (_) {}
+}
+
 function showLogin() {
-    // 로컬 개발: 간단한 토큰 입력
-    const id = prompt('사용자 ID를 입력하세요 (테스트용):');
-    if (id) {
-        currentUser = { id, token: id, email: `${id}@local` };
-        updateAuthUI();
-        if (currentView === 'portfolio') loadPortfolio();
-    }
+    window.location.href = '/login';
 }
 
 function logout() {
     currentUser = null;
+    localStorage.removeItem('auth_token');
+    localStorage.removeItem('auth_user');
     updateAuthUI();
     if (currentView === 'portfolio') loadPortfolio();
 }
@@ -112,6 +117,7 @@ function startAutoRefresh() {
 
 // --- Init ---
 document.addEventListener('DOMContentLoaded', () => {
+    loadSavedAuth();
     setupSearch();
     updateAuthUI();
     startAutoRefresh();
