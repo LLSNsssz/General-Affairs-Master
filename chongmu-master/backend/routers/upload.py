@@ -19,8 +19,17 @@ router = APIRouter(prefix="/api/upload", tags=["파일업로드"])
 
 # ── 날짜 추출 ──
 def extract_dates(name: str) -> list[date]:
-    """파일명에서 날짜 패턴 추출 (YYYYMMDD, YYYY.MM.DD, YYYY-MM-DD)"""
+    """파일명에서 날짜 패턴 추출
+    지원 형식:
+      - 2026년 05월 14일  (한글)
+      - 2026년05월14일    (한글, 공백 없음)
+      - 2026.05.14
+      - 2026-05-14
+      - 20260514
+    """
     patterns = [
+        # 한글 날짜: 2026년 05월 14일 / 2026년05월14일
+        r'(\d{4})\s*년\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일',
         r'(\d{4})\.(\d{2})\.(\d{2})',
         r'(\d{4})-(\d{2})-(\d{2})',
         r'(\d{4})(\d{2})(\d{2})',
@@ -36,6 +45,34 @@ def extract_dates(name: str) -> list[date]:
                 pass
     # 중복 제거 & 정렬
     return sorted(set(dates))
+
+
+def extract_expiry_date(name: str):
+    """'유효기간' 키워드 뒤의 날짜를 만료일로 추출"""
+    m = re.search(r'유효기간\s*(\d{4})\s*년\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일', name)
+    if m:
+        try:
+            return date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+        except ValueError:
+            pass
+    return None
+
+
+def extract_company_name(name: str):
+    """회사명 추출: (주)OOO, 주식회사OOO 등"""
+    patterns = [
+        r'\(주\)\s*(\S+)',          # (주)그린주의
+        r'주식회사\s*(\S+)',         # 주식회사그린주의
+        r'\(유\)\s*(\S+)',          # (유)OOO
+    ]
+    for p in patterns:
+        m = re.search(p, name)
+        if m:
+            # 뒤에 붙는 키워드 제거
+            company = m.group(0).split('4대')[0].split('국세')[0].split('지방세')[0]
+            company = company.split('완납')[0].split('납세')[0].split('인증')[0].split('확인')[0]
+            return company.strip()
+    return None
 
 
 # ── 카테고리 감지 ──
@@ -82,21 +119,32 @@ CATEGORY_RULES = {
 
 
 def detect_category(name: str) -> dict:
-    """파일명에서 카테고리와 세부정보 감지"""
-    name_lower = name.upper()  # ISO 등 대소문자
-    result = {}
+    """파일명에서 카테고리와 세부정보 감지 (구체적 키워드 우선)"""
+    name_upper = name.upper()
 
+    # 매칭된 모든 키워드 수집
+    matches = []
     for keyword, info in CATEGORY_RULES.items():
-        if keyword in name or keyword.upper() in name_lower:
-            # 더 구체적인 매칭 우선 (예: "국민연금" > "4대보험")
-            if not result or len(keyword) > len(result.get("_keyword", "")):
-                result = {**info, "_keyword": keyword}
-            elif result.get("category") == info["category"]:
-                # 같은 카테고리면 세부정보 보강
-                result.update({k: v for k, v in info.items() if v and k != "category"})
-                result["_keyword"] = keyword
+        if keyword in name or keyword.upper() in name_upper:
+            matches.append((keyword, info))
 
-    result.pop("_keyword", None)
+    if not matches:
+        return {}
+
+    # 긴 키워드(더 구체적) 우선 정렬
+    matches.sort(key=lambda x: len(x[0]), reverse=True)
+
+    # 가장 구체적인 매칭을 기본으로
+    best_keyword, best_info = matches[0]
+    result = {**best_info}
+
+    # 같은 카테고리의 다른 매칭에서 세부정보 보강
+    for keyword, info in matches[1:]:
+        if info.get("category") == result.get("category"):
+            for k, v in info.items():
+                if v and k != "category" and not result.get(k):
+                    result[k] = v
+
     return result
 
 
@@ -128,18 +176,38 @@ async def upload_file(file: UploadFile = File(...), db: Session = Depends(get_db
 
     # 파싱
     dates = extract_dates(stem)
+    expiry = extract_expiry_date(stem)
+    company = extract_company_name(stem)
     info = detect_category(stem)
     category = info.get("category", "unknown")
 
-    result = {"file": original_name, "category": category, "parsed": info, "dates": [str(d) for d in dates]}
+    result = {
+        "file": original_name,
+        "category": category,
+        "parsed": info,
+        "dates": [str(d) for d in dates],
+        "expiry": str(expiry) if expiry else None,
+        "company": company,
+    }
 
     if category == "tax":
+        # 유효기간 키워드가 있으면 만료일로 사용
+        final_expiry = expiry or (dates[1] if len(dates) >= 2 else (dates[0] if len(dates) == 1 else None))
+        # 유효기간이 만료일이면, 나머지 날짜 중 이전 날짜를 발급일로
+        final_issue = None
+        if expiry and dates:
+            issue_candidates = [d for d in dates if d < expiry]
+            if issue_candidates:
+                final_issue = issue_candidates[0]
+        elif len(dates) >= 2:
+            final_issue = dates[0]
+
         row = TaxClearance(
             clearance_type=info.get("clearance_type", "기타"),
             sub_type=info.get("sub_type"),
-            issue_date=dates[0] if len(dates) >= 1 else None,
-            expiry_date=dates[1] if len(dates) >= 2 else (dates[0] if len(dates) == 1 else None),
-            issuer=None,
+            issue_date=final_issue,
+            expiry_date=final_expiry,
+            issuer=company,
             cert_number=None,
             file_path=file_path_str,
             memo=f"자동등록: {original_name}",
