@@ -1,10 +1,17 @@
 """총무 마스터 - FastAPI 메인 앱"""
 
+import sys
+from pathlib import Path
+
+# ensure backend/ is on sys.path for uvicorn reload
+_backend_dir = Path(__file__).resolve().parent
+if str(_backend_dir) not in sys.path:
+    sys.path.insert(0, str(_backend_dir))
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
-from pathlib import Path
 
 from database import init_db
 from routers import certificates, vehicles, tax_clearances, seals, contracts, upload
@@ -45,4 +52,4 @@ def on_startup():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("app:app", host="0.0.0.0", port=8200, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8201, reload=True)
