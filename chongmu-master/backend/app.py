@@ -34,6 +34,7 @@ app.include_router(tax_clearances.router)
 app.include_router(seals.router)
 app.include_router(contracts.router)
 app.include_router(upload.router)
+app.include_router(upload.download_router)
 
 # 정적 파일 (css, js 등)
 app.mount("/css", StaticFiles(directory=str(frontend_dir / "css")), name="css")

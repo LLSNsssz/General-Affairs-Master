@@ -18,6 +18,41 @@ from models.contracts import Contract
 
 router = APIRouter(prefix="/api/upload", tags=["파일업로드"])
 
+download_router = APIRouter(prefix="/api/download", tags=["파일다운로드"])
+
+_MODEL_MAP = {
+    "cert": Certificate,
+    "tax": TaxClearance,
+    "vehicle": Vehicle,
+    "seal": Seal,
+    "contract": Contract,
+}
+
+
+@download_router.get("/{kind}/{item_id}")
+def download_file(kind: str, item_id: int, db: Session = Depends(get_db)):
+    from fastapi.responses import FileResponse
+    from urllib.parse import quote
+    Model = _MODEL_MAP.get(kind)
+    if not Model:
+        raise HTTPException(400, "지원하지 않는 종류")
+    row = db.get(Model, item_id)
+    if not row or not row.file_path:
+        raise HTTPException(404, "파일이 없습니다")
+    p = Path(row.file_path)
+    if not p.exists():
+        raise HTTPException(404, "파일이 저장소에 존재하지 않습니다")
+    # 저장 파일명에서 해시 prefix(__xxxxxx) 제거한 원본 파일명 복원
+    name = p.name
+    if "__" in p.stem:
+        orig_stem = p.stem.rsplit("__", 1)[0]
+        name = orig_stem + p.suffix
+    return FileResponse(
+        path=str(p),
+        filename=name,
+        headers={"Content-Disposition": f"attachment; filename*=UTF-8''{quote(name)}"},
+    )
+
 # ── 날짜 추출 ──
 def extract_dates(name: str) -> list[date]:
     """파일명에서 날짜 패턴 추출

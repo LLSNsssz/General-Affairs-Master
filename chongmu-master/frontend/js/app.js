@@ -211,12 +211,18 @@ async function loadDashboard() {
 //  CRUD 테이블 로딩
 // ═══════════════════════════════════════
 
+function dlBtn(kind, r) {
+  if (!r.file_path) return '';
+  return `<a class="btn btn-sm btn-success" href="/api/download/${kind}/${r.id}" download>다운로드</a>`;
+}
+
 function certRow(r) {
   return `<tr>
     <td>${r.cert_type}</td><td>${r.cert_name}</td><td>${fmt(r.issuer)}</td>
     <td>${fmt(r.cert_number)}</td><td>${fmt(r.issue_date)}</td><td>${fmt(r.expiry_date)}</td>
     <td>${badgeFor(r.status)}</td>
     <td>
+      ${dlBtn('cert', r)}
       <button class="btn btn-sm btn-primary" onclick='editCert(${JSON.stringify(r)})'>수정</button>
       <button class="btn btn-sm btn-danger" onclick="delItem('/api/certificates/${r.id}','certificates')">삭제</button>
     </td>
@@ -249,6 +255,7 @@ function taxRow(r) {
     <td>${fmt(r.cert_number)}</td><td>${fmt(r.issue_date)}</td><td>${fmt(r.expiry_date)}</td>
     <td>${badgeFor(r.status)}</td>
     <td>
+      ${dlBtn('tax', r)}
       <button class="btn btn-sm btn-primary" onclick='editTax(${JSON.stringify(r)})'>수정</button>
       <button class="btn btn-sm btn-danger" onclick="delItem('/api/tax-clearances/${r.id}','tax-clearances')">삭제</button>
     </td>
@@ -284,6 +291,7 @@ async function loadVehicles() {
       <td>${fmt(r.lease_company)}</td><td>${fmt(r.lease_end)}</td><td>${fmt(r.insurance_expiry)}</td>
       <td>${badgeFor(r.status)}</td>
       <td>
+        ${dlBtn('vehicle', r)}
         <button class="btn btn-sm btn-primary" onclick='editVehicle(${JSON.stringify(r)})'>수정</button>
         <button class="btn btn-sm btn-danger" onclick="delItem('/api/vehicles/${r.id}','vehicles')">삭제</button>
       </td>
@@ -299,6 +307,7 @@ async function loadSeals() {
       <td>${fmt(r.purpose)}</td><td>${fmt(r.register_date)}</td>
       <td>${badgeFor(r.status)}</td>
       <td>
+        ${dlBtn('seal', r)}
         <button class="btn btn-sm btn-primary" onclick='editSeal(${JSON.stringify(r)})'>수정</button>
         <button class="btn btn-sm btn-danger" onclick="delItem('/api/seals/${r.id}','seals')">삭제</button>
       </td>
@@ -315,6 +324,7 @@ async function loadContracts() {
       <td>${fmt(r.contract_amount)}</td><td>${fmt(r.start_date)}</td><td>${fmt(r.end_date)}</td>
       <td>${badgeFor(r.status)}</td>
       <td>
+        ${dlBtn('contract', r)}
         <button class="btn btn-sm btn-primary" onclick='editContract(${JSON.stringify(r)})'>수정</button>
         <button class="btn btn-sm btn-danger" onclick="delItem('/api/contracts/${r.id}','contracts')">삭제</button>
       </td>
