@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+.venv/
+venv/
+node_modules/
+*.db
+*.db-journal
+*.db.old
+backend/uploads/
+backend/chongmu.db*
+.claude/
+.vscode/
+.idea/
+*.log
