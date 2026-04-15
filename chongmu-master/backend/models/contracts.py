@@ -8,6 +8,8 @@ class Contract(Base):
     __tablename__ = "contracts"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
+    order_number = Column(String(50))                     # 수주번호
+    institution = Column(String(200))                     # 기관 (발주처)
     contract_type = Column(String(50), nullable=False)    # 임대차, 용역, 구매, 유지보수 등
     title = Column(String(300), nullable=False)           # 계약명
     counterpart = Column(String(200))                     # 계약상대방

@@ -22,6 +22,7 @@ class TaxClearanceIn(BaseModel):
     file_path: Optional[str] = None
     memo: Optional[str] = None
     status: str = "유효"
+    is_latest: int = 1
 
 
 class TaxClearanceOut(TaxClearanceIn):
@@ -30,8 +31,14 @@ class TaxClearanceOut(TaxClearanceIn):
 
 
 @router.get("/", response_model=list[TaxClearanceOut])
-def list_tax_clearances(db: Session = Depends(get_db)):
-    return db.query(TaxClearance).order_by(TaxClearance.expiry_date).all()
+def list_tax_clearances(archive: int = 0, db: Session = Depends(get_db)):
+    """archive=0: 최신만, archive=1: 과거자료만, archive=2: 전체"""
+    q = db.query(TaxClearance)
+    if archive == 0:
+        q = q.filter(TaxClearance.is_latest == 1)
+    elif archive == 1:
+        q = q.filter(TaxClearance.is_latest == 0)
+    return q.order_by(TaxClearance.expiry_date.desc()).all()
 
 
 @router.post("/", response_model=TaxClearanceOut)

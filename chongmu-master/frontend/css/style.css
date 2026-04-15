@@ -290,3 +290,13 @@ body {
   margin-bottom: 16px;
   flex-wrap: wrap;
 }
+
+/* Archive section */
+.archive-section { background: #fafafa; }
+.archive-toggle {
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-muted);
+  user-select: none;
+}
+.archive-toggle:hover { color: var(--primary); }

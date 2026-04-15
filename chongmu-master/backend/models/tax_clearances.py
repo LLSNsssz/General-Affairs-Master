@@ -17,3 +17,4 @@ class TaxClearance(Base):
     file_path = Column(String(500))                       # 첨부파일 경로
     memo = Column(Text)                                   # 비고
     status = Column(String(20), default="유효")            # 유효, 만료, 갱신필요
+    is_latest = Column(Integer, default=1)                 # 1=최신, 0=과거자료

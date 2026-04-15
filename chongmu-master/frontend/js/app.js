@@ -210,19 +210,69 @@ async function loadDashboard() {
 // ═══════════════════════════════════════
 //  CRUD 테이블 로딩
 // ═══════════════════════════════════════
+
+function certRow(r) {
+  return `<tr>
+    <td>${r.cert_type}</td><td>${r.cert_name}</td><td>${fmt(r.issuer)}</td>
+    <td>${fmt(r.cert_number)}</td><td>${fmt(r.issue_date)}</td><td>${fmt(r.expiry_date)}</td>
+    <td>${badgeFor(r.status)}</td>
+    <td>
+      <button class="btn btn-sm btn-primary" onclick='editCert(${JSON.stringify(r)})'>수정</button>
+      <button class="btn btn-sm btn-danger" onclick="delItem('/api/certificates/${r.id}','certificates')">삭제</button>
+    </td>
+  </tr>`;
+}
+
 async function loadCertificates() {
-  const data = await apiJson('/api/certificates/');
+  const [latest, archived] = await Promise.all([
+    apiJson('/api/certificates/?archive=0'),
+    apiJson('/api/certificates/?archive=1'),
+  ]);
   const tbody = document.querySelector('#cert-table tbody');
-  tbody.innerHTML = data.length === 0 ? '<tr><td colspan="8" class="empty-state">파일을 끌어다 놓으면 자동 등록됩니다</td></tr>' :
-    data.map(r => `<tr>
-      <td>${r.cert_type}</td><td>${r.cert_name}</td><td>${fmt(r.issuer)}</td>
-      <td>${fmt(r.cert_number)}</td><td>${fmt(r.issue_date)}</td><td>${fmt(r.expiry_date)}</td>
-      <td>${badgeFor(r.status)}</td>
-      <td>
-        <button class="btn btn-sm btn-primary" onclick='editCert(${JSON.stringify(r)})'>수정</button>
-        <button class="btn btn-sm btn-danger" onclick="delItem('/api/certificates/${r.id}','certificates')">삭제</button>
-      </td>
-    </tr>`).join('');
+  tbody.innerHTML = latest.length === 0
+    ? '<tr><td colspan="8" class="empty-state">파일을 끌어다 놓으면 자동 등록됩니다</td></tr>'
+    : latest.map(certRow).join('');
+
+  const section = document.getElementById('cert-archive-section');
+  if (archived.length > 0) {
+    section.style.display = 'block';
+    section.querySelector('.archive-count').textContent = `(${archived.length}건)`;
+    document.querySelector('#cert-archive-table tbody').innerHTML = archived.map(certRow).join('');
+  } else {
+    section.style.display = 'none';
+  }
+}
+
+function taxRow(r) {
+  return `<tr>
+    <td>${r.clearance_type}</td><td>${fmt(r.sub_type)}</td><td>${fmt(r.issuer)}</td>
+    <td>${fmt(r.cert_number)}</td><td>${fmt(r.issue_date)}</td><td>${fmt(r.expiry_date)}</td>
+    <td>${badgeFor(r.status)}</td>
+    <td>
+      <button class="btn btn-sm btn-primary" onclick='editTax(${JSON.stringify(r)})'>수정</button>
+      <button class="btn btn-sm btn-danger" onclick="delItem('/api/tax-clearances/${r.id}','tax-clearances')">삭제</button>
+    </td>
+  </tr>`;
+}
+
+async function loadTaxClearances() {
+  const [latest, archived] = await Promise.all([
+    apiJson('/api/tax-clearances/?archive=0'),
+    apiJson('/api/tax-clearances/?archive=1'),
+  ]);
+  const tbody = document.querySelector('#tax-table tbody');
+  tbody.innerHTML = latest.length === 0
+    ? '<tr><td colspan="8" class="empty-state">파일을 끌어다 놓으면 자동 등록됩니다</td></tr>'
+    : latest.map(taxRow).join('');
+
+  const section = document.getElementById('tax-archive-section');
+  if (archived.length > 0) {
+    section.style.display = 'block';
+    section.querySelector('.archive-count').textContent = `(${archived.length}건)`;
+    document.querySelector('#tax-archive-table tbody').innerHTML = archived.map(taxRow).join('');
+  } else {
+    section.style.display = 'none';
+  }
 }
 
 async function loadVehicles() {
@@ -236,21 +286,6 @@ async function loadVehicles() {
       <td>
         <button class="btn btn-sm btn-primary" onclick='editVehicle(${JSON.stringify(r)})'>수정</button>
         <button class="btn btn-sm btn-danger" onclick="delItem('/api/vehicles/${r.id}','vehicles')">삭제</button>
-      </td>
-    </tr>`).join('');
-}
-
-async function loadTaxClearances() {
-  const data = await apiJson('/api/tax-clearances/');
-  const tbody = document.querySelector('#tax-table tbody');
-  tbody.innerHTML = data.length === 0 ? '<tr><td colspan="8" class="empty-state">파일을 끌어다 놓으면 자동 등록됩니다</td></tr>' :
-    data.map(r => `<tr>
-      <td>${r.clearance_type}</td><td>${fmt(r.sub_type)}</td><td>${fmt(r.issuer)}</td>
-      <td>${fmt(r.cert_number)}</td><td>${fmt(r.issue_date)}</td><td>${fmt(r.expiry_date)}</td>
-      <td>${badgeFor(r.status)}</td>
-      <td>
-        <button class="btn btn-sm btn-primary" onclick='editTax(${JSON.stringify(r)})'>수정</button>
-        <button class="btn btn-sm btn-danger" onclick="delItem('/api/tax-clearances/${r.id}','tax-clearances')">삭제</button>
       </td>
     </tr>`).join('');
 }
@@ -275,15 +310,21 @@ async function loadContracts() {
   const tbody = document.querySelector('#contract-table tbody');
   tbody.innerHTML = data.length === 0 ? '<tr><td colspan="9" class="empty-state">파일을 끌어다 놓으면 자동 등록됩니다</td></tr>' :
     data.map(r => `<tr>
-      <td>${r.contract_type}</td><td>${r.title}</td><td>${fmt(r.counterpart)}</td>
+      <td>${fmt(r.order_number)}</td><td>${fmt(r.institution)}</td>
+      <td>${r.contract_type}</td><td>${r.title}</td>
       <td>${fmt(r.contract_amount)}</td><td>${fmt(r.start_date)}</td><td>${fmt(r.end_date)}</td>
-      <td>${r.auto_renew === 'Y' ? 'O' : 'X'}</td>
       <td>${badgeFor(r.status)}</td>
       <td>
         <button class="btn btn-sm btn-primary" onclick='editContract(${JSON.stringify(r)})'>수정</button>
         <button class="btn btn-sm btn-danger" onclick="delItem('/api/contracts/${r.id}','contracts')">삭제</button>
       </td>
     </tr>`).join('');
+}
+
+// 과거자료 토글
+function toggleArchive(prefix) {
+  const table = document.getElementById(`${prefix}-archive-table`);
+  table.style.display = table.style.display === 'none' ? 'table' : 'none';
 }
 
 async function delItem(url, page) {
@@ -378,6 +419,8 @@ function editSeal(d) {
 function editContract(d) {
   showModal(`<h3>계약 수정</h3>
   <form onsubmit="submitEdit(event, '/api/contracts/${d.id}', 'contracts')">
+    <div class="form-group"><label>수주번호</label><input name="order_number" value="${d.order_number||''}"></div>
+    <div class="form-group"><label>기관 (발주처)</label><input name="institution" value="${d.institution||''}"></div>
     <div class="form-group"><label>구분</label><select name="contract_type">${['임대차','용역','구매','유지보수','기타'].map(t => `<option ${d.contract_type===t?'selected':''}>${t}</option>`).join('')}</select></div>
     <div class="form-group"><label>계약명</label><input name="title" value="${d.title||''}" required></div>
     <div class="form-group"><label>계약상대방</label><input name="counterpart" value="${d.counterpart||''}"></div>

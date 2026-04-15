@@ -79,13 +79,26 @@
           <p>&#128206; 인증서 파일을 끌어다 놓으세요 <label class="btn btn-sm btn-primary" style="margin-left:12px">파일 선택<input type="file" multiple hidden onchange="onFileSelect(this)"></label></p>
         </div>
       </div>
-      <div class="card"><table class="data-table" id="cert-table">
-        <thead><tr>
-          <th>구분</th><th>인증서명</th><th>발급기관</th><th>인증번호</th>
-          <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
-        </tr></thead>
-        <tbody></tbody>
-      </table></div>
+      <div class="card">
+        <h3 style="margin-bottom:12px">최신 인증서</h3>
+        <table class="data-table" id="cert-table">
+          <thead><tr>
+            <th>구분</th><th>인증서명</th><th>발급기관</th><th>인증번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="card archive-section" style="display:none" id="cert-archive-section">
+        <h3 class="archive-toggle" onclick="toggleArchive('cert')">과거자료 <span class="archive-count"></span> &#9660;</h3>
+        <table class="data-table" id="cert-archive-table" style="display:none">
+          <thead><tr>
+            <th>구분</th><th>인증서명</th><th>발급기관</th><th>인증번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
 
     <!-- ══ 차량 ══ -->
@@ -113,13 +126,26 @@
           <p>&#128206; 완납증명서 파일을 끌어다 놓으세요 <label class="btn btn-sm btn-primary" style="margin-left:12px">파일 선택<input type="file" multiple hidden onchange="onFileSelect(this)"></label></p>
         </div>
       </div>
-      <div class="card"><table class="data-table" id="tax-table">
-        <thead><tr>
-          <th>구분</th><th>세부구분</th><th>발급기관</th><th>증명번호</th>
-          <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
-        </tr></thead>
-        <tbody></tbody>
-      </table></div>
+      <div class="card">
+        <h3 style="margin-bottom:12px">최신 완납증명서</h3>
+        <table class="data-table" id="tax-table">
+          <thead><tr>
+            <th>구분</th><th>세부구분</th><th>발급기관</th><th>증명번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="card archive-section" style="display:none" id="tax-archive-section">
+        <h3 class="archive-toggle" onclick="toggleArchive('tax')">과거자료 <span class="archive-count"></span> &#9660;</h3>
+        <table class="data-table" id="tax-archive-table" style="display:none">
+          <thead><tr>
+            <th>구분</th><th>세부구분</th><th>발급기관</th><th>증명번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
 
     <!-- ══ 직생 ══ -->
@@ -149,8 +175,8 @@
       </div>
       <div class="card"><table class="data-table" id="contract-table">
         <thead><tr>
-          <th>구분</th><th>계약명</th><th>계약상대</th><th>금액</th>
-          <th>시작일</th><th>종료일</th><th>자동갱신</th><th>상태</th><th>관리</th>
+          <th>수주번호</th><th>기관</th><th>구분</th><th>계약명</th><th>금액</th>
+          <th>시작일</th><th>종료일</th><th>상태</th><th>관리</th>
         </tr></thead>
         <tbody></tbody>
       </table></div>

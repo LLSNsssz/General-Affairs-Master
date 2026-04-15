@@ -193,7 +193,6 @@ async def upload_file(file: UploadFile = File(...), db: Session = Depends(get_db
     if category == "tax":
         # 유효기간 키워드가 있으면 만료일로 사용
         final_expiry = expiry or (dates[1] if len(dates) >= 2 else (dates[0] if len(dates) == 1 else None))
-        # 유효기간이 만료일이면, 나머지 날짜 중 이전 날짜를 발급일로
         final_issue = None
         if expiry and dates:
             issue_candidates = [d for d in dates if d < expiry]
@@ -202,9 +201,21 @@ async def upload_file(file: UploadFile = File(...), db: Session = Depends(get_db
         elif len(dates) >= 2:
             final_issue = dates[0]
 
+        # 같은 종류 기존 최신 건을 과거자료로
+        cl_type = info.get("clearance_type", "기타")
+        s_type = info.get("sub_type")
+        old_query = db.query(TaxClearance).filter(
+            TaxClearance.clearance_type == cl_type,
+            TaxClearance.is_latest == 1,
+        )
+        if s_type:
+            old_query = old_query.filter(TaxClearance.sub_type == s_type)
+        for old in old_query.all():
+            old.is_latest = 0
+
         row = TaxClearance(
-            clearance_type=info.get("clearance_type", "기타"),
-            sub_type=info.get("sub_type"),
+            clearance_type=cl_type,
+            sub_type=s_type,
             issue_date=final_issue,
             expiry_date=final_expiry,
             issuer=company,
@@ -212,6 +223,7 @@ async def upload_file(file: UploadFile = File(...), db: Session = Depends(get_db
             file_path=file_path_str,
             memo=f"자동등록: {original_name}",
             status="유효",
+            is_latest=1,
         )
         db.add(row)
         db.commit()
@@ -220,16 +232,25 @@ async def upload_file(file: UploadFile = File(...), db: Session = Depends(get_db
         result["message"] = f"완납증명서 등록 완료 ({row.clearance_type} {row.sub_type or ''})"
 
     elif category == "cert":
+        # 같은 종류 기존 최신 건을 과거자료로
+        c_type = info.get("cert_type", "기타")
+        for old in db.query(Certificate).filter(
+            Certificate.cert_type == c_type,
+            Certificate.is_latest == 1,
+        ).all():
+            old.is_latest = 0
+
         row = Certificate(
-            cert_type=info.get("cert_type", "기타"),
+            cert_type=c_type,
             cert_name=stem,
-            issuer=None,
+            issuer=company,
             cert_number=None,
             issue_date=dates[0] if len(dates) >= 1 else None,
             expiry_date=dates[1] if len(dates) >= 2 else None,
             file_path=file_path_str,
             memo=f"자동등록: {original_name}",
             status="유효",
+            is_latest=1,
         )
         db.add(row)
         db.commit()

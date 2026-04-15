@@ -13,6 +13,8 @@ router = APIRouter(prefix="/api/contracts", tags=["계약문서"])
 
 
 class ContractIn(BaseModel):
+    order_number: Optional[str] = None
+    institution: Optional[str] = None
     contract_type: str
     title: str
     counterpart: Optional[str] = None
@@ -33,7 +35,7 @@ class ContractOut(ContractIn):
 
 @router.get("/", response_model=list[ContractOut])
 def list_contracts(db: Session = Depends(get_db)):
-    return db.query(Contract).order_by(Contract.end_date).all()
+    return db.query(Contract).order_by(Contract.end_date.desc()).all()
 
 
 @router.post("/", response_model=ContractOut)
