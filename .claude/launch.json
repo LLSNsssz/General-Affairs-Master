@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "chongmu-master",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["C:/Users/GS002/Documents/codex/General-Affairs-Master/.claude/worktrees/peaceful-moore/chongmu-master/backend/app.py"],
+      "port": 8201
+    }
+  ]
+}

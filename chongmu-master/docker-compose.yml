@@ -1,0 +1,39 @@
+services:
+  chongmu:
+    build: .
+    image: chongmu-master:latest
+    container_name: chongmu-master
+    restart: unless-stopped
+    ports:
+      # NAS LAN IP:8201 로 접속
+      - "8201:8201"
+    volumes:
+      # NAS 공유폴더를 컨테이너 /data 에 마운트
+      # 아래 경로(./data)를 NAS 공유폴더 실제 경로로 바꾸면 됨
+      # 예) Synology: /volume1/chongmu/data
+      #     QNAP:     /share/Container/chongmu/data
+      - ./data:/data
+    environment:
+      - TZ=Asia/Seoul
+      - DATA_DIR=/data
+      - UPLOAD_DIR=/data/uploads
+      # PostgreSQL로 나중에 바꿀 때:
+      # - DATABASE_URL=postgresql+psycopg://user:pass@db:5432/chongmu
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost:8201/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # ── 선택: 사용자 많아지면 이 블록 주석 해제 + 위 DATABASE_URL도 해제 ──
+  # db:
+  #   image: postgres:16-alpine
+  #   container_name: chongmu-db
+  #   restart: unless-stopped
+  #   environment:
+  #     - POSTGRES_USER=chongmu
+  #     - POSTGRES_PASSWORD=changeme
+  #     - POSTGRES_DB=chongmu
+  #     - TZ=Asia/Seoul
+  #   volumes:
+  #     - ./data/postgres:/var/lib/postgresql/data

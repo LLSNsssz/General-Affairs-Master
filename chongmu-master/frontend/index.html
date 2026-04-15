@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>총무 마스터</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1>총무 마스터</h1>
+    <nav>
+      <a href="#" class="active" data-page="dashboard">
+        <span class="icon">&#9632;</span> 대시보드
+      </a>
+      <a href="#" data-page="certificates">
+        <span class="icon">&#9733;</span> 인증서
+      </a>
+      <a href="#" data-page="vehicles">
+        <span class="icon">&#9951;</span> 차량
+      </a>
+      <a href="#" data-page="tax-clearances">
+        <span class="icon">&#9635;</span> 완납증명서
+      </a>
+      <a href="#" data-page="seals">
+        <span class="icon">&#9673;</span> 직생
+      </a>
+      <a href="#" data-page="contracts">
+        <span class="icon">&#9997;</span> 계약문서
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- 업로드 결과 토스트 -->
+    <div id="upload-log" class="upload-log" style="display:none"></div>
+
+    <!-- ══ 대시보드 ══ -->
+    <div id="page-dashboard" class="page active">
+      <div class="page-header"><h2>대시보드</h2></div>
+
+      <!-- 드래그앤드롭 존 -->
+      <div class="drop-zone" id="main-drop">
+        <div class="drop-zone-inner">
+          <div class="drop-icon">&#128206;</div>
+          <p><strong>파일을 여기에 끌어다 놓으세요</strong></p>
+          <p class="drop-hint">파일명에서 자동으로 카테고리, 날짜를 인식합니다</p>
+          <p class="drop-hint">예: <code>여성기업확인서_20250101_20280101.pdf</code></p>
+          <label class="btn btn-primary" style="margin-top:12px">
+            파일 선택
+            <input type="file" multiple hidden onchange="onFileSelect(this)">
+          </label>
+        </div>
+      </div>
+
+      <div class="stats-grid" id="stats-grid"></div>
+
+      <div class="card">
+        <h3 style="margin-bottom:12px">만료 임박 알림</h3>
+        <div class="alert-rules">
+          <span class="badge badge-expired">4대보험: D-3</span>
+          <span class="badge badge-warning">국세/지방세: D-7</span>
+          <span class="badge badge-valid">인증서/차량/계약: D-30</span>
+        </div>
+        <ul class="alert-list" id="alert-list">
+          <li class="empty-state">데이터를 불러오는 중...</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ══ 인증서 ══ -->
+    <div id="page-certificates" class="page">
+      <div class="page-header"><h2>인증서 관리</h2></div>
+      <div class="drop-zone drop-zone-sm">
+        <div class="drop-zone-inner">
+          <p>&#128206; 인증서 파일을 끌어다 놓으세요 <label class="btn btn-sm btn-primary" style="margin-left:12px">파일 선택<input type="file" multiple hidden onchange="onFileSelect(this)"></label></p>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:12px">최신 인증서</h3>
+        <table class="data-table" id="cert-table">
+          <thead><tr>
+            <th>구분</th><th>인증서명</th><th>발급기관</th><th>인증번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="card archive-section" style="display:none" id="cert-archive-section">
+        <h3 class="archive-toggle" onclick="toggleArchive('cert')">과거자료 <span class="archive-count"></span> &#9660;</h3>
+        <table class="data-table" id="cert-archive-table" style="display:none">
+          <thead><tr>
+            <th>구분</th><th>인증서명</th><th>발급기관</th><th>인증번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ══ 차량 ══ -->
+    <div id="page-vehicles" class="page">
+      <div class="page-header"><h2>차량 관리</h2></div>
+      <div class="drop-zone drop-zone-sm">
+        <div class="drop-zone-inner">
+          <p>&#128206; 차량 관련 파일을 끌어다 놓으세요 <label class="btn btn-sm btn-primary" style="margin-left:12px">파일 선택<input type="file" multiple hidden onchange="onFileSelect(this)"></label></p>
+        </div>
+      </div>
+      <div class="card"><table class="data-table" id="vehicle-table">
+        <thead><tr>
+          <th>차량번호</th><th>차종</th><th>사용자</th><th>리스사</th>
+          <th>리스종료</th><th>보험만료</th><th>상태</th><th>관리</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </div>
+
+    <!-- ══ 완납증명서 ══ -->
+    <div id="page-tax-clearances" class="page">
+      <div class="page-header"><h2>완납증명서 관리</h2></div>
+      <div class="drop-zone drop-zone-sm">
+        <div class="drop-zone-inner">
+          <p>&#128206; 완납증명서 파일을 끌어다 놓으세요 <label class="btn btn-sm btn-primary" style="margin-left:12px">파일 선택<input type="file" multiple hidden onchange="onFileSelect(this)"></label></p>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:12px">최신 완납증명서</h3>
+        <table class="data-table" id="tax-table">
+          <thead><tr>
+            <th>구분</th><th>세부구분</th><th>발급기관</th><th>증명번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="card archive-section" style="display:none" id="tax-archive-section">
+        <h3 class="archive-toggle" onclick="toggleArchive('tax')">과거자료 <span class="archive-count"></span> &#9660;</h3>
+        <table class="data-table" id="tax-archive-table" style="display:none">
+          <thead><tr>
+            <th>구분</th><th>세부구분</th><th>발급기관</th><th>증명번호</th>
+            <th>발급일</th><th>만료일</th><th>상태</th><th>관리</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ══ 직생 ══ -->
+    <div id="page-seals" class="page">
+      <div class="page-header"><h2>직인/생인 관리</h2></div>
+      <div class="drop-zone drop-zone-sm">
+        <div class="drop-zone-inner">
+          <p>&#128206; 직인/생인 파일을 끌어다 놓으세요 <label class="btn btn-sm btn-primary" style="margin-left:12px">파일 선택<input type="file" multiple hidden onchange="onFileSelect(this)"></label></p>
+        </div>
+      </div>
+      <div class="card"><table class="data-table" id="seal-table">
+        <thead><tr>
+          <th>구분</th><th>인감명</th><th>보관자</th><th>용도</th>
+          <th>등록일</th><th>상태</th><th>관리</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </div>
+
+    <!-- ══ 계약문서 ══ -->
+    <div id="page-contracts" class="page">
+      <div class="page-header"><h2>계약문서 관리</h2></div>
+      <div class="drop-zone drop-zone-sm">
+        <div class="drop-zone-inner">
+          <p>&#128206; 계약문서 파일을 끌어다 놓으세요 <label class="btn btn-sm btn-primary" style="margin-left:12px">파일 선택<input type="file" multiple hidden onchange="onFileSelect(this)"></label></p>
+        </div>
+      </div>
+      <div class="card"><table class="data-table" id="contract-table">
+        <thead><tr>
+          <th>수주번호</th><th>기관</th><th>구분</th><th>계약명</th><th>금액</th>
+          <th>시작일</th><th>종료일</th><th>상태</th><th>관리</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </div>
+
+  </div>
+
+  <!-- Modal (수정용) -->
+  <div class="modal-backdrop" id="modal-backdrop" onclick="closeModal(event)">
+    <div class="modal" id="modal-content"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

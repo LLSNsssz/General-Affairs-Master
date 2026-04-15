@@ -89,17 +89,13 @@
         </section>
 
         <section class="browser-stage">
-          <webview
-            id="reader-webview"
-            class="reader-webview"
-            partition="persist:sticky-lupin-reader"
-            allowpopups="false"
-          ></webview>
+          <div id="reader-stage-host" class="reader-stage-host" aria-hidden="true"></div>
+          <div id="stage-cover" class="stage-cover"></div>
 
           <div id="stage-placeholder" class="stage-placeholder">
-            <p class="eyebrow">Loading</p>
-            <h2>Preparing the reading board</h2>
-            <p class="muted">The page is being refreshed inside the embedded browser.</p>
+            <p class="eyebrow is-hidden"></p>
+            <h2>Loading</h2>
+            <p class="muted is-hidden"></p>
           </div>
         </section>
 
@@ -180,6 +176,15 @@
       </section>
     </div>
 
+    <script src="./core-utils.js"></script>
+    <script src="./site-config.js"></script>
+    <script src="./site-theme.js"></script>
+    <script src="./reader-controller.js"></script>
+    <script src="./ui-panels.js"></script>
+    <script src="./navigation-state.js"></script>
+    <script src="./site-actions.js"></script>
+    <script src="./window-drag.js"></script>
+    <script src="./reader-runtime.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
