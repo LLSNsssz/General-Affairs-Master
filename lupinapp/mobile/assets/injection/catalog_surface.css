@@ -1,0 +1,16 @@
+html,
+body {
+  background: #f6efb6 !important;
+}
+
+body {
+  color: #231f15 !important;
+}
+
+[class*='banner'],
+[class*='hero'],
+[class*='carousel'],
+[class*='ad-'] {
+  display: none !important;
+}
+

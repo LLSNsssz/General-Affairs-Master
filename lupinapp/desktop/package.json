@@ -1,0 +1,48 @@
+{
+  "name": "sticky-lupin-desktop",
+  "version": "0.3.9",
+  "private": true,
+  "description": "Compact memo-inspired desktop reader built with Electron.",
+  "author": "GS002",
+  "main": "main.js",
+  "scripts": {
+    "build:ts": "set \"PATH=%CD%\\\\.tools\\\\node-v25.8.1-win-x64;%PATH%\" && node node_modules/typescript/bin/tsc -p tsconfig.json",
+    "typecheck": "set \"PATH=%CD%\\\\.tools\\\\node-v25.8.1-win-x64;%PATH%\" && node node_modules/typescript/bin/tsc -p tsconfig.json --noEmit",
+    "start": "set \"PATH=%CD%\\\\.tools\\\\node-v25.8.1-win-x64;%PATH%\" && node node_modules/typescript/bin/tsc -p tsconfig.json && node scripts/start-dev.js",
+    "verify:release": "set \"PATH=%CD%\\\\.tools\\\\node-v25.8.1-win-x64;%PATH%\" && node node_modules/typescript/bin/tsc -p tsconfig.json && node scripts/verify-release.js",
+    "dist:win": "set \"PATH=%CD%\\\\.tools\\\\node-v25.8.1-win-x64;%PATH%\" && node node_modules/typescript/bin/tsc -p tsconfig.json && node scripts/verify-release.js && node node_modules/electron-builder/cli.js --win portable"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.12",
+    "typescript": "^5.9.3"
+  },
+  "build": {
+    "appId": "com.stickylupin.desktop",
+    "productName": "Sticky Lupin Reader",
+    "asar": true,
+    "compression": "normal",
+    "npmRebuild": false,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "assets/**/*",
+      "renderer/**/*",
+      "package.json",
+      "!release/**/*",
+      "!.runtime/**/*",
+      "!.tools/**/*"
+    ],
+    "win": {
+      "icon": "assets/sticky-lupin.ico",
+      "target": [
+        "portable"
+      ],
+      "artifactName": "${productName}-${version}-windows.${ext}"
+    }
+  }
+}

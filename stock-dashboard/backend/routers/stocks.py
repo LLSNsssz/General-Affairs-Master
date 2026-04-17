@@ -8,12 +8,12 @@ router = APIRouter(prefix="/api", tags=["stocks"])
 
 
 @router.get("/stocks")
-async def list_stocks(market: str = "all"):
+async def list_stocks(market: str = "all", fresh: bool = False):
     data = []
     if market in ("all", "kr"):
-        data.extend(get_kr_stock_data())
+        data.extend(get_kr_stock_data(force_refresh=fresh))
     if market in ("all", "us"):
-        data.extend(get_us_stock_data())
+        data.extend(get_us_stock_data(force_refresh=fresh))
     return {"stocks": data, "updated_at": datetime.now().isoformat()}
 
 

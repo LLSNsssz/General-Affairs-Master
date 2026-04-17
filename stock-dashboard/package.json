@@ -1,0 +1,11 @@
+{
+  "name": "stock-dashboard",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "lint:web": "npm --prefix apps/web run lint",
+    "typecheck:web": "npm --prefix apps/web run typecheck",
+    "dev:legacy": "python backend\\app.py"
+  }
+}

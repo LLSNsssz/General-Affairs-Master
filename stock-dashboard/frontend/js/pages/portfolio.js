@@ -3,8 +3,9 @@
  */
 let portfolioData = null;
 
-async function loadPortfolio() {
+async function loadPortfolio(options = {}) {
     const container = document.getElementById('view-portfolio');
+    const fresh = options.fresh === true;
 
     if (!currentUser) {
         container.innerHTML = `
@@ -23,7 +24,7 @@ async function loadPortfolio() {
     container.innerHTML = '<div class="loading">포트폴리오 로딩 중...</div>';
 
     try {
-        const res = await api('/api/portfolio');
+        const res = await api(`/api/portfolio${fresh ? '?fresh=1' : ''}`);
         portfolioData = res;
         renderPortfolio();
     } catch (err) {

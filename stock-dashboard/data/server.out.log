@@ -1,0 +1,2151 @@
+startup environment=development database_mode=sqlite frontend_enabled=True host=0.0.0.0 port=8000
+request_completed request_id=6a25f4c73fe44afd8da508269591c179 method=GET path=/api/health client_ip=127.0.0.1 status_code=200 duration_ms=3.46
+INFO:     127.0.0.1:54869 - "GET /api/health HTTP/1.1" 200 OK
+request_completed request_id=6b2fc0974bb44109be27645a3aca1180 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6081.89
+INFO:     127.0.0.1:55311 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=3afe69fe4c3d42f39998cf80cbf7f871 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.96
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=1ba46fd0fe2e46b59c21a46f63a47a95 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.61
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=c851459301b24efeb43214e7c9f5705b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.33
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=28e843f327874234991ed3fcee07abf9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.43
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=5749c68a78b944fc9a6623f57cd3aab1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.19
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=1bcbe9ef112e41c7968c01bbc7465e80 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.33
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=aa6a60fa5bdc470ab41ca152df38285a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.24
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=957fc1da20d3468b9f0ab54d6297d7d5 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.26
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=288773604aed4a7da7a4ed463f278daa method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.19
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=a3e78bd7f90642159f4fd712ef9f20b5 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.19
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=3b7cc2bffdda4f2bae6786b75cf9c2f4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.43
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=a2ee3c41d08e4d30b1c8950d23caf998 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.18
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=3093eb93f4a74c3faa2e9d457d7046d6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.44
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=e50f45e15cdc4119bc2f5a8a4319e01e method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.19
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=2ae63a5a400f498e8a7f3a3947889261 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2.51
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=cc9bce0f633c480a986fc286ce3d8258 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.43
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=415beecb8e864416b51ee3e4e3c58880 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.5
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=7533abb671ca45d6a150997928cb38fc method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.26
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=8dd7147a1adb4488a3e90ced33990e2f method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.17
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=acce65b6c678471abecc1a65069a922b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.42
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=306e951eec7642b6bb20453a8a2f172a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.2
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=73c569b03a1c4096ac059def17236ce4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.18
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=4200761efd694f62aaa586b026054c09 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.42
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=8cb615b54829453390631194bc98c453 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.42
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=075ae19ea05d4428802b0a3003f93842 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.18
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+
+10 Failed downloads:
+['NVDA', 'JPM', 'GOOGL', 'MSFT', 'AAPL', 'META', 'AMZN', 'V', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=c94e8977c2da45fb9939c9c1d40378c5 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.45
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=fe8961ed05dc4965a6691da07954557b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5619.94
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=b9f89925296d4ec694604a2a9858bbf7 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.2
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=89e3d010f97f49fbb3fec8375c7547a4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.22
+INFO:     127.0.0.1:55317 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'JPM', 'GOOGL', 'MSFT', 'AAPL', 'AMZN', 'V', 'META', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=7290863671fa489287c8b0a07a37ca3b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.28
+INFO:     127.0.0.1:55593 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=c4d8ea11446c4fafb79cc5194ec088b7 method=GET path=/api/search client_ip=127.0.0.1 status_code=200 duration_ms=3012.55
+INFO:     127.0.0.1:55594 - "GET /api/search?q=%ED%8E%84 HTTP/1.1" 200 OK
+Failed to get ticker 'ÆÞ' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=2bdc3f7e57d84535b150a0238f7ba92f method=GET path=/api/search client_ip=127.0.0.1 status_code=200 duration_ms=3004.17
+INFO:     127.0.0.1:55610 - "GET /api/search?q=%ED%8E%84%EC%96%B4%EB%B9%84%EC%8A%A4 HTTP/1.1" 200 OK
+Failed to get ticker 'ÆÞ¾îºñ½º' reason: Expecting value: line 1 column 1 (char 0)
+
+1 Failed download:
+['ÆÞ']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+2 Failed downloads:
+['ÆÞ', 'ÆÞ¾îºñ½º']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=84f62c23fd5446229a87af2e0af00ac9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6441.97
+INFO:     127.0.0.1:55610 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'MSFT', 'GOOGL', 'NVDA', 'AAPL', 'V', 'AMZN', 'META', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=d88fa517f79a4cb4af270697b84d248e method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.31
+INFO:     127.0.0.1:55757 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=88367a5eedc249ce96e94358cd5c40e9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=7657.46
+INFO:     127.0.0.1:55758 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['MSFT', 'GOOGL', 'JPM', 'NVDA', 'META', 'AAPL', 'V', 'AMZN', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=8596e9b1a4b44defb2629fe9f98290f0 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.2
+INFO:     127.0.0.1:55897 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=951990aa9abf4180ae46a209072eff61 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5397.64
+INFO:     127.0.0.1:55898 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'JPM', 'MSFT', 'GOOGL', 'META', 'AAPL', 'V', 'AMZN', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=63c7e193b70448eb999d9996594ce5e7 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6803.91
+INFO:     127.0.0.1:56075 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'GOOGL', 'MSFT', 'JPM', 'META', 'AAPL', 'V', 'AMZN', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=7bd50da3fdae4191b9bd6b8671bc6fb9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=7110.47
+INFO:     127.0.0.1:56082 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'GOOGL', 'JPM', 'MSFT', 'AMZN', 'V', 'META', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=0cf18b7e08fa4753bc96ba23695c2d86 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6763.03
+INFO:     127.0.0.1:56351 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'GOOGL', 'MSFT', 'JPM', 'V', 'AAPL', 'AMZN', 'META', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e1c8eaff5bbd46d3ac2cb6118975cdc8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4116.4
+INFO:     127.0.0.1:56353 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'MSFT', 'JPM', 'GOOGL', 'META', 'V', 'AAPL', 'AMZN', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=80517a1efb7f47cf9882d9c7e1d30e51 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4243.36
+INFO:     127.0.0.1:56633 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['GOOGL', 'MSFT', 'JPM', 'NVDA', 'AMZN', 'AAPL', 'V', 'META', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=cafef00e1adf4f49a75de0aea061e643 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4210.75
+INFO:     127.0.0.1:56651 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'NVDA', 'MSFT', 'GOOGL', 'META', 'AAPL', 'AMZN', 'V', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=877850d4a9d94fcba4823ab2b14aa14c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6722.01
+INFO:     127.0.0.1:56916 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'NVDA', 'GOOGL', 'MSFT', 'AMZN', 'AAPL', 'META', 'V', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=1273ca6658c84366a1a4094063abc735 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5157.73
+INFO:     127.0.0.1:56920 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'JPM', 'MSFT', 'GOOGL', 'AMZN', 'AAPL', 'META', 'V', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e9379f5ef04c4585826cbd068d6113c9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4172.17
+INFO:     127.0.0.1:57188 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['MSFT', 'GOOGL', 'NVDA', 'JPM', 'AMZN', 'META', 'AAPL', 'V', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e42aea980d5e4654a576b5baf0670896 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6779.24
+INFO:     127.0.0.1:57335 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'GOOGL', 'JPM', 'MSFT', 'AMZN', 'AAPL', 'META', 'V', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=97dfee31156b41d781d2c6f745ef67e7 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4298.1
+INFO:     127.0.0.1:57340 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'GOOGL', 'MSFT', 'NVDA', 'AAPL', 'AMZN', 'META', 'V', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=69135bcbb9fd4425a65c9072f5279005 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4221.06
+INFO:     127.0.0.1:57615 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['GOOGL', 'MSFT', 'JPM', 'NVDA', 'AMZN', 'META', 'V', 'AAPL', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=77284fbafc90433680a5e121cd156709 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6011.09
+INFO:     127.0.0.1:57636 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'MSFT', 'GOOGL', 'NVDA', 'META', 'AAPL', 'V', 'AMZN', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=7f6c0ea0c877443f86c0ccbd7727f89c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4474.65
+INFO:     127.0.0.1:57890 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'GOOGL', 'NVDA', 'MSFT', 'V', 'META', 'AMZN', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=7e58e52b341747838bc40c8345fa4904 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4399.46
+INFO:     127.0.0.1:58058 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'GOOGL', 'MSFT', 'JPM', 'META', 'AAPL', 'AMZN', 'V', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=490d8c2e7d634a92b73c42820d7d68dc method=GET path=/api/health client_ip=127.0.0.1 status_code=200 duration_ms=4.15
+INFO:     127.0.0.1:58172 - "GET /api/health HTTP/1.1" 200 OK
+request_completed request_id=7ca90fca8f4649bb940bb9288b54de4b method=GET path=/api/health client_ip=127.0.0.1 status_code=200 duration_ms=3.24
+INFO:     127.0.0.1:58187 - "GET /api/health HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=a79ac27d02d642d89e750f15c775aadf method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4295.31
+INFO:     127.0.0.1:58075 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+$AAPL: possibly delisted; no price data found  (period=1mo)
+request_completed request_id=00d81d23c3234a6182b62d5691c2ea9c method=GET path=/api/chart/US/AAPL client_ip=127.0.0.1 status_code=200 duration_ms=3280.04
+INFO:     127.0.0.1:58293 - "GET /api/chart/US/AAPL?days=30 HTTP/1.1" 200 OK
+
+10 Failed downloads:
+['JPM', 'GOOGL', 'NVDA', 'MSFT', 'META', 'V', 'AMZN', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AAPL']: possibly delisted; no price data found  (period=1mo)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=a8328ac0e68b43aabee6d70bef706bff method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4433.89
+INFO:     127.0.0.1:58295 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=0a8cd1199f354ebdb68b0e003845e64a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3002.24
+INFO:     127.0.0.1:58296 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['GOOGL', 'MSFT', 'JPM', 'NVDA', 'META', 'V', 'AMZN', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=3f539d4b616647bba97572804740c335 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1544.01
+INFO:     127.0.0.1:58426 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=d5bbdac6ecda45069f879d8d1759b1e8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3012.76
+INFO:     127.0.0.1:58427 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'MSFT', 'GOOGL', 'NVDA', 'META', 'AAPL', 'AMZN', 'V', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=60710849e5864adc8015b35f7600d630 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.25
+INFO:     127.0.0.1:58568 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=327a2921ed624ff685f84b7f77022e80 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6075.93
+INFO:     127.0.0.1:58569 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'GOOGL', 'MSFT', 'JPM', 'AMZN', 'META', 'AAPL', 'V', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=32b96936ba42401f90e2581ea48c3d86 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.4
+INFO:     127.0.0.1:58730 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=54bb27d499034164972f1dbdf4ea4ad6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6125.4
+INFO:     127.0.0.1:58731 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM']: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=2.5)"))
+['MSFT', 'GOOGL', 'NVDA', 'AMZN', 'META', 'AAPL', 'V', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=93add2591241459182ab366e9f96e541 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.36
+INFO:     127.0.0.1:58854 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b0003d340f24425bb8b3477d11b12def method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=7878.64
+INFO:     127.0.0.1:58856 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'NVDA', 'GOOGL', 'MSFT', 'V', 'AAPL', 'AMZN', 'META', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=548e2c5d7c7d47e08072997dffbe3d51 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6447.45
+INFO:     127.0.0.1:59009 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'GOOGL', 'JPM', 'MSFT', 'V', 'AMZN', 'META', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f53c39ae90594935a338078ae528a979 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5343.36
+INFO:     127.0.0.1:59144 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['MSFT', 'NVDA', 'GOOGL', 'JPM', 'V', 'META', 'AMZN', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=10a021493dfc4b52b120b50c1805f5ae method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4248.08
+INFO:     127.0.0.1:59281 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'MSFT', 'JPM', 'GOOGL', 'AAPL', 'META', 'AMZN', 'V', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=3af9786de16b44dba3dd36abe7b08e8b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4099.63
+INFO:     127.0.0.1:59412 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'GOOGL', 'NVDA', 'MSFT', 'V', 'AMZN', 'META', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=82358c3080534c95ba4bd4ab9ea180d8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4190.65
+INFO:     127.0.0.1:59548 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'JPM', 'GOOGL', 'MSFT', 'META', 'AMZN', 'V', 'AAPL', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=a34a6b60c3ab4ac0b30f518c4219f1b4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=8705.43
+INFO:     127.0.0.1:59682 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'MSFT', 'NVDA', 'GOOGL', 'AAPL', 'META', 'AMZN', 'V', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=ebdea18c461b423d9e27bf2e31d34511 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5630.64
+INFO:     127.0.0.1:59832 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'MSFT', 'JPM', 'META', 'AAPL', 'V', 'AMZN', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['GOOGL']: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=2.5)"))
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=54dd8ceaafb8426784a22d130cdbac03 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5635.74
+INFO:     127.0.0.1:59970 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['MSFT', 'GOOGL', 'NVDA', 'JPM', 'AMZN', 'V', 'META', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=11743e60a52a4095a397f96e1833c175 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.46
+INFO:     127.0.0.1:59977 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c656bc61ec354240a34ec9a1e2ac3371 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6083.98
+INFO:     127.0.0.1:60141 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['NVDA', 'MSFT', 'GOOGL', 'JPM', 'AAPL', 'META', 'V', 'AMZN', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=45fd0e6eeb5b46838119efb826f034b9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.17
+INFO:     127.0.0.1:60148 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=7f756e99ab93449d9c57279266f62936 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6906.07
+INFO:     127.0.0.1:60286 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['MSFT', 'JPM', 'GOOGL', 'NVDA', 'V', 'AMZN', 'META', 'AAPL', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=4247240ab0cd4477a70b86490e4ae471 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=7994.21
+INFO:     127.0.0.1:60292 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+request_completed request_id=b2fa5429a8584e8ea53d00a1afab2522 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1.27
+INFO:     127.0.0.1:60292 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['JPM', 'GOOGL', 'MSFT', 'NVDA', 'AMZN', 'META', 'V', 'AAPL', 'TSM', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b773d8953fdf4ecabb0528eaa09eb414 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6376.37
+INFO:     127.0.0.1:60551 - "GET /api/stocks?market=all HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=73b6528f19524c94924d313daecac4ea method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5299.58
+INFO:     127.0.0.1:60643 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=2064432b93ec44f98ea9c724be2b60bc method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5300.7
+INFO:     127.0.0.1:60644 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=f61572a28e74452286575a32c6d5ac7d method=GET path=/api/health client_ip=127.0.0.1 status_code=200 duration_ms=23.75
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b08ff6c0dffd46e0bd888064a0fb9ab8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4336.73
+INFO:     127.0.0.1:60688 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=78425a8c2db0443788013c936d09f884 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6409.16
+INFO:     127.0.0.1:60689 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e59dfdb205324980b8eea74dfbfafaee method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6412.46
+INFO:     127.0.0.1:60726 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=e4b7424ffab24534a8fd933a1d5c4c35 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3013.65
+request_completed request_id=b2da28ae9fa646b2bec79c7ce96c35fd method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3106.55
+INFO:     127.0.0.1:60829 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b857ed12162546e5946c8cddad7b0bd5 method=GET path=/api/chart/KR/005930 client_ip=127.0.0.1 status_code=200 duration_ms=1967.39
+request_completed request_id=28b93711915043ebae190aef91eeb769 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1880.92
+INFO:     127.0.0.1:60879 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=f303560640cb4b7ba49b55c5b97505f0 method=GET path=/api/chart/KR/005930 client_ip=127.0.0.1 status_code=200 duration_ms=79.38
+INFO:     127.0.0.1:60890 - "GET /api/chart/KR/005930?days=90 HTTP/1.1" 200 OK
+request_completed request_id=2844b62edf014db69d55a0b79b43bab5 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1419.35
+INFO:     127.0.0.1:60936 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+['NVDA', 'AAPL', 'GOOGL', 'META', 'TSM', 'TSLA', 'V', 'AMZN', 'MSFT', 'JPM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['NVDA', 'AAPL', 'GOOGL', 'META', 'TSM', 'TSLA', 'V', 'AMZN', 'MSFT', 'JPM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+
+10 Failed downloads:
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=5cd2e8f9799a4ed2a58a6177bb73fbf6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3016.75
+INFO:     127.0.0.1:60957 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=f1425be974694ce6a9d0c9aef270c043 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1549.3
+INFO:     127.0.0.1:60936 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=119e841057c04434a8cdbfb24286074b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3013.61
+INFO:     127.0.0.1:60957 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=88dd316f6a9744ee991a4848a59fbf93 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1725.14
+INFO:     127.0.0.1:60936 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=bfcad088299a441592be7fa4ee91faa1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3012.19
+INFO:     127.0.0.1:60957 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e9d8e6d4ac2146dc949fc43081b51219 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1738.39
+INFO:     127.0.0.1:60936 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=01025d25a9864665896f139a695a1e76 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3037.07
+INFO:     127.0.0.1:60957 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=376c1bc4a0a8423aa7d78d15297ab295 method=GET path=/api/chart/KR/000660 client_ip=127.0.0.1 status_code=200 duration_ms=99.44
+INFO:     127.0.0.1:60936 - "GET /api/chart/KR/000660?days=90 HTTP/1.1" 200 OK
+request_completed request_id=b409000132b54a9085e4d259d80a8c2a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1391.76
+INFO:     127.0.0.1:60936 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+
+10 Failed downloads:
+
+10 Failed downloads:
+['AAPL', 'GOOGL', 'NVDA', 'META', 'V', 'TSM', 'TSLA', 'AMZN', 'JPM', 'MSFT']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AAPL', 'GOOGL', 'NVDA', 'META', 'V', 'TSM', 'TSLA', 'AMZN', 'JPM', 'MSFT']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=dbe2eeff4a9c485ea3f11c8b74185b67 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3008.84
+INFO:     127.0.0.1:60957 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=0033ff56d79a4525a87819ca23cedc4c method=GET path=/api/chart/KR/005930 client_ip=127.0.0.1 status_code=200 duration_ms=90.85
+INFO:     127.0.0.1:61446 - "GET /api/chart/KR/005930?days=90 HTTP/1.1" 200 OK
+request_completed request_id=7bb4f99e9c7b419fa2db22a14a4bc45f method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1336.11
+INFO:     127.0.0.1:60936 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f6c11bcb92f64803a9b24d69dbd2732f method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3017.56
+INFO:     127.0.0.1:60957 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+$MSFT: possibly delisted; no price data found  (period=3mo)
+request_completed request_id=006e75d4dc25424cbdace6433efd2b76 method=GET path=/api/chart/US/MSFT client_ip=127.0.0.1 status_code=200 duration_ms=5935.21
+INFO:     127.0.0.1:61446 - "GET /api/chart/US/MSFT?days=90 HTTP/1.1" 200 OK
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=06162a28e7ac4c7397d78f51ea1bc710 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6893.48
+INFO:     127.0.0.1:60936 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=e01f9ccaec414155bac310e6135ce2ca method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6894.34
+INFO:     127.0.0.1:60957 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+['AAPL', 'AMZN', 'GOOGL', 'NVDA', 'V', 'META', 'MSFT', 'TSLA', 'TSM', 'JPM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AAPL', 'AMZN', 'GOOGL', 'NVDA', 'V', 'META', 'MSFT', 'TSLA', 'TSM', 'JPM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AAPL', 'AMZN', 'GOOGL', 'NVDA', 'V', 'META', 'MSFT', 'TSLA', 'TSM', 'JPM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AAPL', 'AMZN', 'GOOGL', 'NVDA', 'V', 'META', 'MSFT', 'TSLA', 'TSM', 'JPM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+$MSFT: possibly delisted; no price data found  (period=3mo)
+request_completed request_id=9698e1a4d29147699f356861de0685a1 method=GET path=/api/chart/US/MSFT client_ip=127.0.0.1 status_code=200 duration_ms=6935.97
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b6245f65bf744dbf8ee7718d926a6091 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4664.57
+request_completed request_id=25503cd955ac41178ea8a5a3509cc086 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1660.62
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=cabd390bbf9141b3b3545c04dd78b8ba method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4327.41
+INFO:     127.0.0.1:61712 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=d54f6bba78aa424daaa0671bcb9ffc18 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3014.79
+INFO:     127.0.0.1:61713 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b700646e4cbc46ff814112cef3c12256 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4710.95
+INFO:     127.0.0.1:61895 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=ad2e8c4b3e174e98867e886c297c43bd method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3008.63
+INFO:     127.0.0.1:61896 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=479184f351464bf89b912e36caa54c6e method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1779.83
+INFO:     127.0.0.1:61895 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=095cb998c8854bdf806fe14a1bac6e5d method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3007.37
+INFO:     127.0.0.1:61896 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c7dd7d3ff7e2471f93146aec018a6b80 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5344.23
+INFO:     127.0.0.1:61895 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=e10ec37a2f3141078c9f5db26774c59f method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5345.25
+INFO:     127.0.0.1:61896 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['AMZN', 'AAPL', 'V', 'META', 'MSFT', 'TSM', 'TSLA', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+['AMZN', 'AAPL', 'V', 'META', 'MSFT', 'TSM', 'TSLA', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AMZN', 'AAPL', 'V', 'META', 'MSFT', 'TSM', 'TSLA', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AMZN', 'AAPL', 'V', 'META', 'MSFT', 'TSM', 'TSLA', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=a769ac38712146108ee6e178399362ca method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1379.77
+INFO:     127.0.0.1:62181 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f0e4ec185e084430bf0d38a6bc6562de method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3007.24
+INFO:     127.0.0.1:62182 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=d0ba537f8c2a474c885398b07b6d5732 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1421.82
+INFO:     127.0.0.1:62181 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=636673e2ff2e49fc9e5f55d3f0ec6a72 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3003.78
+INFO:     127.0.0.1:62182 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=79308c01d8884782ab5832f2fb5e42f2 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1805.68
+INFO:     127.0.0.1:62181 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=0b512936a39c467c81248cdede4d3b8a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3015.64
+INFO:     127.0.0.1:62182 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=115debc23b8a438b975ec8bf0c135ad1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4167.43
+INFO:     127.0.0.1:62181 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['AMZN', 'TSLA', 'NVDA', 'MSFT', 'JPM', 'TSM', 'GOOGL', 'AAPL', 'META', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+['AMZN', 'TSLA', 'NVDA', 'MSFT', 'JPM', 'TSM', 'GOOGL', 'AAPL', 'META', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AMZN', 'TSLA', 'NVDA', 'MSFT', 'JPM', 'TSM', 'GOOGL', 'AAPL', 'META', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AMZN', 'TSLA', 'NVDA', 'MSFT', 'JPM', 'TSM', 'GOOGL', 'AAPL', 'META', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=d6464903f6484150af93e1d0141991be method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3014.11
+INFO:     127.0.0.1:62182 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=cbcd3903067542d4b407582ad03d9249 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3006.48
+INFO:     127.0.0.1:62182 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=2814a396edbc4b1a944a0c1e47d09641 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2990.99
+INFO:     127.0.0.1:62557 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+['V', 'META', 'AAPL', 'AMZN', 'MSFT', 'TSM', 'JPM', 'TSLA', 'GOOGL', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'META', 'AAPL', 'AMZN', 'MSFT', 'TSM', 'JPM', 'TSLA', 'GOOGL', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+['V', 'META', 'AAPL', 'AMZN', 'MSFT', 'TSM', 'JPM', 'TSLA', 'GOOGL', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=88e9dfaef16941198b572a0ee012eaa9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1893.57
+INFO:     127.0.0.1:62557 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=3271a0f18fe641edaa78176c1548fd86 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2997.46
+INFO:     127.0.0.1:62663 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=26342dba62df46b08860b53fdee1dcba method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1693.18
+INFO:     127.0.0.1:62557 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c5c8b9f657ce49dfb92853b0a3b509cc method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3016.58
+INFO:     127.0.0.1:62663 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=f0e782997e904492bdf3c5d49d29c816 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1354.79
+INFO:     127.0.0.1:62557 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=ca83dfdbf54941f18f0ae789e9e34a6d method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3007.46
+INFO:     127.0.0.1:62663 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=de529d2b8d594459a5f4cdb856a28e14 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1524.11
+INFO:     127.0.0.1:62557 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=1a170d3f19a34227933b3fb345f8f1ad method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3027.36
+INFO:     127.0.0.1:62663 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=81907dcc73014ce4b21a9d93c3bc2e84 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3737.49
+INFO:     127.0.0.1:62557 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['JPM', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'META', 'GOOGL', 'AAPL', 'V', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['JPM', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'META', 'GOOGL', 'AAPL', 'V', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['JPM', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'META', 'GOOGL', 'AAPL', 'V', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['JPM', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'META', 'GOOGL', 'AAPL', 'V', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=474606c4bf1a45419ab83d3b8d6ce799 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3007.07
+INFO:     127.0.0.1:62663 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=6746b05960c24e519b18148abeda0598 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3004.52
+INFO:     127.0.0.1:62663 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b7d9d9ac2af84ba681e6664063dc31ec method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2946.16
+INFO:     127.0.0.1:63126 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=2524f58606d5429ea41d6e02a328bd63 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=7669.53
+INFO:     127.0.0.1:63231 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=20601fa99ea8415093ae3ce53746bd73 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3005.76
+INFO:     127.0.0.1:63232 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=51cf1c467d014e389992d4cbf08da714 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3923.65
+INFO:     127.0.0.1:63231 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f99d251a5dc74f0abd0e5a025418091e method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3015.53
+INFO:     127.0.0.1:63232 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=5c48d3f0bacc407382663b5aba0a42e4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1910.03
+INFO:     127.0.0.1:63231 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f8f4dc7708c44851a706c1706a204a65 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3014.12
+INFO:     127.0.0.1:63232 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['V', 'AMZN', 'META', 'AAPL', 'TSM', 'JPM', 'TSLA', 'MSFT', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'AMZN', 'META', 'AAPL', 'TSM', 'JPM', 'TSLA', 'MSFT', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'AMZN', 'META', 'AAPL', 'TSM', 'JPM', 'TSLA', 'MSFT', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'AMZN', 'META', 'AAPL', 'TSM', 'JPM', 'TSLA', 'MSFT', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c174fd6113ae4d7ca52d81e27b9bdd1a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2826.13
+INFO:     127.0.0.1:63231 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c982d3c8723d4cc09095af91298b9850 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3009.46
+INFO:     127.0.0.1:63232 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=a4676d881688494d893c1c7087ba5b07 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4793.87
+INFO:     127.0.0.1:63629 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=5da1c40d3dfb494d81dd490492ebcead method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3026.37
+INFO:     127.0.0.1:63630 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=00e4ed29382346648ef921698ce8621f method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1443.9
+INFO:     127.0.0.1:63629 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=cb5147d029444c19bbff2d4928122357 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3020.27
+INFO:     127.0.0.1:63630 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=a5477f2044da4c8c9797d60fa71b0a18 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1296.38
+INFO:     127.0.0.1:63629 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=803dc4a02c5c4ad98d36e974815bd3e6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3012.71
+INFO:     127.0.0.1:63630 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=273a859d602642b9b073e7e615ad2374 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2304.5
+INFO:     127.0.0.1:63629 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=c421d00e67da483fb73a31cfa7254ffc method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3008.23
+INFO:     127.0.0.1:63630 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['V', 'AAPL', 'META', 'GOOGL', 'AMZN', 'TSLA', 'TSM', 'JPM', 'MSFT', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=2aba127bed3a41fcb2e8ca4ffe115147 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3964.8
+INFO:     127.0.0.1:64004 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e46bf650b34d4be6bf241d7c83a92be6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3006.51
+INFO:     127.0.0.1:64005 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=1d0c77abce5b4689a7379454d331853b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3013.57
+INFO:     127.0.0.1:64005 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=865216810ee242ff8170ffd7b95b0668 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3432.05
+INFO:     127.0.0.1:64107 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['V', 'TSLA', 'AMZN', 'TSM', 'MSFT', 'JPM', 'NVDA', 'GOOGL', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'TSLA', 'AMZN', 'TSM', 'MSFT', 'JPM', 'NVDA', 'GOOGL', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'TSLA', 'AMZN', 'TSM', 'MSFT', 'JPM', 'NVDA', 'GOOGL', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'TSLA', 'AMZN', 'TSM', 'MSFT', 'JPM', 'NVDA', 'GOOGL', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=39fc534c362b44d6a0ecb43ed475fdc6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1848.32
+INFO:     127.0.0.1:64107 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=e94ad233b5ff40abb0ef7ab31344a13c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3021.57
+INFO:     127.0.0.1:64212 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=eafa668a68c947daa3715e1b4821993c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2184.92
+INFO:     127.0.0.1:64107 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=003749fc654748588f11df793bcbd249 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3011.73
+INFO:     127.0.0.1:64212 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=ff4c370f29d54d7ab289c7669ce70252 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1399.92
+INFO:     127.0.0.1:64413 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=cf49d44b92634c5582d0f618c80cfbba method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3005.25
+INFO:     127.0.0.1:64414 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=b3e8d47bc80d4f719d5508a4f7ef29e0 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1356.12
+INFO:     127.0.0.1:64413 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=3babed884e58431a93128ceb7a4d0376 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3005.08
+INFO:     127.0.0.1:64414 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=7e023c134d3d4883a946bc44ede866cf method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1976.67
+INFO:     127.0.0.1:64413 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c10bc4bbf34b434b81c9c82ecce5a0fc method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3013.03
+INFO:     127.0.0.1:64414 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=332bbe2b16224ffe88a6757ecd1e0981 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1404.86
+INFO:     127.0.0.1:64413 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['META', 'AAPL', 'AMZN', 'V', 'TSLA', 'JPM', 'MSFT', 'TSM', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['META', 'AAPL', 'AMZN', 'V', 'TSLA', 'JPM', 'MSFT', 'TSM', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['META', 'AAPL', 'AMZN', 'V', 'TSLA', 'JPM', 'MSFT', 'TSM', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c7627cd0bcfd42a7a714f247833ba152 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3016.58
+INFO:     127.0.0.1:64414 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=08280df0cde1401c8a87e88fb10ec72b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2187.65
+INFO:     127.0.0.1:64413 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f9e2c682e37d40c3838cd895d3cf69ca method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3006.75
+INFO:     127.0.0.1:64414 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=1e28131303144ad592de1dbc458c59d4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2451.46
+INFO:     127.0.0.1:64891 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=2fb3d126a2c54412852e17bc8473fdff method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3017.13
+INFO:     127.0.0.1:64892 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['TSM', 'MSFT', 'JPM', 'TSLA', 'AAPL', 'META', 'NVDA', 'GOOGL', 'AMZN', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['TSM', 'MSFT', 'JPM', 'TSLA', 'AAPL', 'META', 'NVDA', 'GOOGL', 'AMZN', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['TSM', 'MSFT', 'JPM', 'TSLA', 'AAPL', 'META', 'NVDA', 'GOOGL', 'AMZN', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+['TSM', 'MSFT', 'JPM', 'TSLA', 'AAPL', 'META', 'NVDA', 'GOOGL', 'AMZN', 'V']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=a85954da46194f0a869811c425c66a93 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1727.25
+INFO:     127.0.0.1:64995 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=2c74dcf3ca3242a1843bdf9cdcc43770 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3019.5
+INFO:     127.0.0.1:64996 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=7cfdfccd65024682b91882d016d8c737 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4950.17
+INFO:     127.0.0.1:64995 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=971a928f535440edbd2b0dc278ee0b11 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3017.77
+INFO:     127.0.0.1:64996 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=d0e13e62c3744a45b043e214cca35454 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5065.45
+INFO:     127.0.0.1:64995 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=d20c26b9603d473191fe5c4d2023db5b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5067.85
+INFO:     127.0.0.1:64996 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=64c909363adf4787899a61038f8f098c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1598.46
+INFO:     127.0.0.1:65302 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e9696917afd54f39b101fb94110cea70 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3017.64
+INFO:     127.0.0.1:65303 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=92e2b366c7854e62b99001201ac2e125 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1260.83
+INFO:     127.0.0.1:65302 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=6d8edf1f6bc64f83923057696742d0bc method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3000.44
+INFO:     127.0.0.1:65303 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['GOOGL', 'MSFT', 'NVDA', 'JPM', 'AMZN', 'AAPL', 'V', 'META', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['GOOGL', 'MSFT', 'NVDA', 'JPM', 'AMZN', 'AAPL', 'V', 'META', 'TSLA', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=84454f9554214836a2084f12259b9f3c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4526.95
+INFO:     127.0.0.1:65302 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=c382a6680f0b49ecb64b54b476e4a1ae method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4528.92
+INFO:     127.0.0.1:65303 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f93be25c259945cea9cd4926350aef38 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5529.81
+INFO:     127.0.0.1:65302 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=26b1af8d823e4c2cba399410579dce01 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=5530.75
+INFO:     127.0.0.1:65303 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=9d10fe443c614a518bb2b124ef8580c6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4212.9
+INFO:     127.0.0.1:49295 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=42131f9fc2f74938ace05e157afc3009 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3012.19
+INFO:     127.0.0.1:49296 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=8d117e6cd00342e1b6b67e97cbdc2aa8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1116.78
+INFO:     127.0.0.1:49295 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=dd9e787c0d6840ad8541baf6754d4b04 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3007.75
+INFO:     127.0.0.1:49296 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=d8ea00e7cac1423382b9ddd30d1777c1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1495.79
+INFO:     127.0.0.1:49295 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=f87df4805fc3445fb84f85b65921810f method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3018.81
+INFO:     127.0.0.1:49296 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=4ad0c6f0f7de4fa1bca9fcbd7ff0399c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1271.97
+INFO:     127.0.0.1:49295 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['META', 'AAPL', 'AMZN', 'V', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['META', 'AAPL', 'AMZN', 'V', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['META', 'AAPL', 'AMZN', 'V', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['META', 'AAPL', 'AMZN', 'V', 'TSM', 'TSLA', 'MSFT', 'NVDA', 'JPM', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=9e351be28cc64b8ea5d62dca7a92371c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3003.83
+INFO:     127.0.0.1:49296 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=744651fa97e44379b9514df5e4794567 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1582.55
+INFO:     127.0.0.1:49295 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e7c104f59a8a455f9e04603a7e6029d1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3011.71
+INFO:     127.0.0.1:49296 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=9092bb6d0f4245b88001a741af90bbe8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1859.49
+INFO:     127.0.0.1:49295 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=4b0a54de2bce428abb0fb7525c6fac6b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3028.02
+INFO:     127.0.0.1:49296 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+['META', 'V', 'TSLA', 'AMZN', 'JPM', 'TSM', 'MSFT', 'NVDA', 'GOOGL', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+['META', 'V', 'TSLA', 'AMZN', 'JPM', 'TSM', 'MSFT', 'NVDA', 'GOOGL', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=7ca1953c4b214ceda17610094cee87e5 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1601.82
+INFO:     127.0.0.1:49851 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=4bcd12685ad1415daef86ed3113f9bb2 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3016.18
+INFO:     127.0.0.1:49852 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=57fe2e409e4044bbb1bbd01aa3ac5c81 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1265.44
+INFO:     127.0.0.1:49851 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=481fc41d59364294ae9a387186504f86 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3017.77
+INFO:     127.0.0.1:49852 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=f7fa8fd4155d4c679e95d34ab9c8f2e9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1578.66
+INFO:     127.0.0.1:49851 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=6e0a5b4244404a49a5505e737cccf6b6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3020.34
+INFO:     127.0.0.1:49852 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=8cadd201fc5f4e9490781e2412e09197 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2120.56
+INFO:     127.0.0.1:49851 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['META', 'V', 'AAPL', 'AMZN', 'MSFT', 'JPM', 'TSLA', 'TSM', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['META', 'V', 'AAPL', 'AMZN', 'MSFT', 'JPM', 'TSLA', 'TSM', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+['META', 'V', 'AAPL', 'AMZN', 'MSFT', 'JPM', 'TSLA', 'TSM', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['META', 'V', 'AAPL', 'AMZN', 'MSFT', 'JPM', 'TSLA', 'TSM', 'NVDA', 'GOOGL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=8770b708a497444b84a333d59b78f8e8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3012.1
+INFO:     127.0.0.1:49852 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=2f49551f66ee4a56bb13ae8ce2150a88 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=6830.49
+INFO:     127.0.0.1:50224 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=635acf76f10f4f9895b1eda356bb6006 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3012.39
+INFO:     127.0.0.1:50225 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=fec249431c4c4e7ab71cc78452059588 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4556.22
+INFO:     127.0.0.1:50224 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=a22fd174ae7c4827a312871bd6720447 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3020.7
+INFO:     127.0.0.1:50225 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=3e856fb78e91444c93c6019a228d25e4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3820.86
+INFO:     127.0.0.1:50224 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=82bea2ce4e694438952dcb5bff0489c2 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3018.8
+INFO:     127.0.0.1:50225 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+['V', 'AMZN', 'TSM', 'TSLA', 'NVDA', 'MSFT', 'GOOGL', 'JPM', 'AAPL', 'META']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+['V', 'AMZN', 'TSM', 'TSLA', 'NVDA', 'MSFT', 'GOOGL', 'JPM', 'AAPL', 'META']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+['V', 'AMZN', 'TSM', 'TSLA', 'NVDA', 'MSFT', 'GOOGL', 'JPM', 'AAPL', 'META']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'AMZN', 'TSM', 'TSLA', 'NVDA', 'MSFT', 'GOOGL', 'JPM', 'AAPL', 'META']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+request_completed request_id=eea45a760f374586bf2a05e1e2d7cd46 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4898.37
+INFO:     127.0.0.1:50224 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=071b659c15dc48589f82a3010b436fb8 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3007.5
+INFO:     127.0.0.1:50225 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=934da3a6ecaf4d44a8a30aefde990032 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3013.71
+INFO:     127.0.0.1:50225 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b82086476d8c4433b52e1ab2cf7c1d3b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2991.44
+INFO:     127.0.0.1:50650 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=451a9dbe38dd4d2285306f550b45da7d method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4197.41
+INFO:     127.0.0.1:50762 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=697d1c6ab3344609a75eec121584baa6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3009.6
+INFO:     127.0.0.1:50763 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=edc878f312de4cbeab9fbea9bdce7f45 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4220.25
+INFO:     127.0.0.1:50762 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=41005a99c6bb4929a0057055aa1b7ae9 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3004.02
+INFO:     127.0.0.1:50763 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=18f234324ba44585ba7ecb5d349bd513 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3010.54
+INFO:     127.0.0.1:50763 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['TSM', 'JPM', 'MSFT', 'AAPL', 'GOOGL', 'NVDA', 'META', 'V', 'TSLA', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+['TSM', 'JPM', 'MSFT', 'AAPL', 'GOOGL', 'NVDA', 'META', 'V', 'TSLA', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['TSM', 'JPM', 'MSFT', 'AAPL', 'GOOGL', 'NVDA', 'META', 'V', 'TSLA', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['TSM', 'JPM', 'MSFT', 'AAPL', 'GOOGL', 'NVDA', 'META', 'V', 'TSLA', 'AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c03f70322b004e13a0bc2228ff0715a1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4899.36
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c70dd5cb25324d76b622ba60cc6fa81d method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1868.87
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=24b7a5b210ee48d4a9c6ccbc52d8fb00 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3011.69
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b4ed43d945ac4c64b6c6ca3e7cfa591e method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4645.74
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=9f87ea04f330444b8555ea2357e673ee method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4646.6
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=88102feb3b3c4341aa7297f6458db91c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4258.62
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=7cc5e02e81b0489e831ef5fd63b26003 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4259.54
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=581b06541bc141b2a838cc2666d64d2c method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1306.92
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=6a301991623e4fa8a012b51f1f63fbe7 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3007.89
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['V', 'AMZN', 'TSM', 'TSLA', 'JPM', 'NVDA', 'GOOGL', 'MSFT', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['V', 'AMZN', 'TSM', 'TSLA', 'JPM', 'NVDA', 'GOOGL', 'MSFT', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['AMZN']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=dca960dc5d874ed3a9b1559610359d0f method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1718.24
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=eefad1b5811346cc9392099ece822612 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3015.5
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=c01a06b2a77b49e28cdb27ac46c68d68 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1819.05
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=914b2dfb0fa046f1b025965cf0bbf90e method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3003.11
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=37310b2901ee4ad9a14a1b63c1eb8f5a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1838.5
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=53b95efe21f54173ae6e0aa2a84c8369 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3005.37
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=0fbf86d9074b428f9750c74869f1f1ec method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1345.25
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e2dcdcfacd174de882e0555e182363c1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3013.57
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=1f1c602a8aa947f594b30168de5b63bf method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1376.92
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+
+10 Failed downloads:
+['V', 'TSM', 'TSLA', 'AMZN', 'GOOGL', 'JPM', 'NVDA', 'MSFT', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'TSM', 'TSLA', 'AMZN', 'GOOGL', 'JPM', 'NVDA', 'MSFT', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'TSM', 'TSLA', 'AMZN', 'GOOGL', 'JPM', 'NVDA', 'MSFT', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['V', 'TSM', 'TSLA', 'AMZN', 'GOOGL', 'JPM', 'NVDA', 'MSFT', 'META', 'AAPL']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=e0cfae912e4f454fb021dede09512b4b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3006.53
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=842674cabbff4740bf837e10d3f4293a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1819.45
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=6419d98cb2104355913e27f37e22338b method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2998.2
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=df69f32879ef45ef82b247109558f59d method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=2707.01
+INFO:     127.0.0.1:50961 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=febcd21b2cd642709a66ae62af6e4f25 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3009.14
+INFO:     127.0.0.1:51064 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=3993725164df405b9a7ff21b4661f887 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4925.82
+INFO:     127.0.0.1:52067 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=1f2fb34aa9234f35b36ca394392c6322 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3005.36
+INFO:     127.0.0.1:52068 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=81e68ce1bc0d4170b119341c989b9695 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1365.55
+INFO:     127.0.0.1:52067 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=d6b3ca8f7b2a4fb19338591fb524efe1 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3069.16
+INFO:     127.0.0.1:52068 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=bf61ffa9e9a742828074e9f869791367 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=1654.31
+INFO:     127.0.0.1:52067 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=edd3df4a00664cd19348d191a95a5d96 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3014.73
+INFO:     127.0.0.1:52068 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+['GOOGL', 'AAPL', 'META', 'V', 'TSLA', 'AMZN', 'TSM', 'JPM', 'MSFT', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+['GOOGL', 'AAPL', 'META', 'V', 'TSLA', 'AMZN', 'TSM', 'JPM', 'MSFT', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+
+10 Failed downloads:
+['GOOGL', 'AAPL', 'META', 'V', 'TSLA', 'AMZN', 'TSM', 'JPM', 'MSFT', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=b0d0f9a66b944b7db718608a16c414f4 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=4783.21
+INFO:     127.0.0.1:52067 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=3ca30fc6384a4587bd33a35b7912bfb6 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3010.0
+INFO:     127.0.0.1:52068 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=de8e8bb1db9846e2a0ec52f9fdc04f79 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=7149.93
+INFO:     127.0.0.1:52067 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=aa021eaaa3a2470bb1d9357fa436af9a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=7151.33
+INFO:     127.0.0.1:52068 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+request_completed request_id=40442ec783f04371b05d9bb2a1267ca0 method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3632.98
+INFO:     127.0.0.1:52067 - "GET /api/stocks?market=kr&fresh=1 HTTP/1.1" 200 OK
+request_completed request_id=e950f095f5c84b079f83292c069dee1a method=GET path=/api/stocks client_ip=127.0.0.1 status_code=200 duration_ms=3008.22
+INFO:     127.0.0.1:52068 - "GET /api/stocks?market=us&fresh=1 HTTP/1.1" 200 OK
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+
+10 Failed downloads:
+['AMZN', 'TSLA', 'V', 'MSFT', 'GOOGL', 'JPM', 'NVDA', 'AAPL', 'META', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+['AMZN', 'TSLA', 'V', 'MSFT', 'GOOGL', 'JPM', 'NVDA', 'AAPL', 'META', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+
+10 Failed downloads:
+['AMZN', 'TSLA', 'V', 'MSFT', 'GOOGL', 'JPM', 'NVDA', 'AAPL', 'META', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+['TSLA', 'JPM', 'NVDA', 'MSFT', 'GOOGL', 'META', 'AAPL', 'V', 'AMZN', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+
+10 Failed downloads:
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+['TSLA', 'JPM', 'NVDA', 'MSFT', 'GOOGL', 'META', 'AAPL', 'V', 'AMZN', 'TSM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GOOGL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSM' reason: Expecting value: line 1 column 1 (char 0)

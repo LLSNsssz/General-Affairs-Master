@@ -2,6 +2,7 @@
  * Stock Dashboard - SPA Core
  */
 const API_BASE = '';  // 같은 호스트 (배포시 변경)
+const DASHBOARD_AUTO_REFRESH_MS = 5000;
 let currentView = 'dashboard';
 let currentUser = null;  // {id, email} or null
 let autoRefreshTimer = null;
@@ -94,6 +95,7 @@ function logout() {
     localStorage.removeItem('auth_token');
     localStorage.removeItem('auth_user');
     updateAuthUI();
+    if (currentView === 'dashboard') loadDashboard();
     if (currentView === 'portfolio') loadPortfolio();
 }
 
@@ -112,7 +114,7 @@ function updateAuthUI() {
 function startAutoRefresh() {
     autoRefreshTimer = setInterval(() => {
         if (currentView === 'dashboard') loadDashboard();
-    }, 30000);
+    }, DASHBOARD_AUTO_REFRESH_MS);
 }
 
 // --- Init ---
@@ -120,9 +122,20 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSavedAuth();
     setupSearch();
     updateAuthUI();
+    document.getElementById('autoRefreshStatus').textContent = `자동 갱신 ${Math.round(DASHBOARD_AUTO_REFRESH_MS / 1000)}초`;
     startAutoRefresh();
 
     document.getElementById('refreshBtn').addEventListener('click', () => {
+        if (currentView === 'dashboard') {
+            loadDashboard({ fresh: true });
+            return;
+        }
+
+        if (currentView === 'portfolio') {
+            loadPortfolio({ fresh: true });
+            return;
+        }
+
         navigateTo(currentView);
     });
 

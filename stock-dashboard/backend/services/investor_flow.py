@@ -1,7 +1,8 @@
 """외국인/기관 투자자 매매 데이터 (한국 주식 전용)"""
 
 from datetime import datetime, timedelta
-from pykrx import stock as krx_stock
+
+from pykrx_compat import call_quietly, krx_stock
 
 
 def get_investor_trading(symbol: str, days: int = 20) -> list[dict]:
@@ -9,7 +10,7 @@ def get_investor_trading(symbol: str, days: int = 20) -> list[dict]:
     end = datetime.now().strftime("%Y%m%d")
     start = (datetime.now() - timedelta(days=days)).strftime("%Y%m%d")
     try:
-        df = krx_stock.get_market_trading_value_by_date(start, end, symbol)
+        df = call_quietly(krx_stock.get_market_trading_value_by_date, start, end, symbol)
         if df.empty:
             return []
         result = []
@@ -30,7 +31,7 @@ def get_foreign_ownership(symbol: str, days: int = 20) -> list[dict]:
     end = datetime.now().strftime("%Y%m%d")
     start = (datetime.now() - timedelta(days=days)).strftime("%Y%m%d")
     try:
-        df = krx_stock.get_exhaustion_rates_of_foreign_investment_by_date(start, end, symbol)
+        df = call_quietly(krx_stock.get_exhaustion_rates_of_foreign_investment_by_date, start, end, symbol)
         if df.empty:
             return []
         result = []

@@ -1,0 +1,34 @@
+:root {
+  --sticky-shell-bg: #f6efb6;
+  --sticky-text: #231f15;
+  --sticky-font-size: 18px;
+  --sticky-line-height: 1.8;
+  --sticky-letter-spacing: -0.1px;
+}
+
+html,
+body {
+  background: var(--sticky-shell-bg) !important;
+  color: var(--sticky-text) !important;
+}
+
+body {
+  font-size: var(--sticky-font-size) !important;
+  line-height: var(--sticky-line-height) !important;
+  letter-spacing: var(--sticky-letter-spacing) !important;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg[role='presentation'] {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+

@@ -1,11 +1,15 @@
-"""포트폴리오 API 라우터 (인증 필요)"""
+"""Portfolio API routes."""
 
-from fastapi import APIRouter, Request, Depends
+from fastapi import APIRouter, Request
 from pydantic import BaseModel
+
 from auth import require_auth
 from services.portfolio_service import (
-    get_portfolio_summary, upsert_holding, sell_holding,
-    delete_holding, get_transactions,
+    delete_holding,
+    get_portfolio_summary,
+    get_transactions,
+    sell_holding,
+    upsert_holding,
 )
 
 router = APIRouter(prefix="/api/portfolio", tags=["portfolio"])
@@ -29,17 +33,22 @@ class SellRequest(BaseModel):
 
 
 @router.get("")
-async def portfolio(request: Request):
+async def portfolio(request: Request, fresh: bool = False):
     user_id = await require_auth(request)
-    return get_portfolio_summary(user_id)
+    return get_portfolio_summary(user_id, force_refresh=fresh)
 
 
 @router.post("/holdings")
 async def add_holding(body: HoldingRequest, request: Request):
     user_id = await require_auth(request)
     return upsert_holding(
-        user_id, body.symbol, body.market, body.name,
-        body.quantity, body.avg_price, body.currency,
+        user_id,
+        body.symbol,
+        body.market,
+        body.name,
+        body.quantity,
+        body.avg_price,
+        body.currency,
     )
 
 
@@ -47,8 +56,12 @@ async def add_holding(body: HoldingRequest, request: Request):
 async def sell(body: SellRequest, request: Request):
     user_id = await require_auth(request)
     return sell_holding(
-        user_id, body.symbol, body.market,
-        body.quantity, body.price, body.currency,
+        user_id,
+        body.symbol,
+        body.market,
+        body.quantity,
+        body.price,
+        body.currency,
     )
 
 

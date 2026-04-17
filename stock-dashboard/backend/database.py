@@ -1,18 +1,23 @@
-import sqlite3
-import os
-from contextlib import contextmanager
-from config import DATABASE_MODE, SQLITE_PATH, SUPABASE_URL, SUPABASE_KEY
+"""Database helpers for SQLite development and Supabase deployment."""
 
-# --- SQLite (로컬 개발) ---
+import os
+import sqlite3
+from contextlib import contextmanager
+
+from config import DATABASE_MODE, SQLITE_PATH, SUPABASE_KEY, SUPABASE_SERVICE_KEY, SUPABASE_URL
+
+_supabase_client = None
+
 
 def init_sqlite():
-    """SQLite DB 초기화 - 테이블 생성"""
+    """Initialize the local SQLite database."""
     os.makedirs(os.path.dirname(SQLITE_PATH), exist_ok=True)
     conn = sqlite3.connect(SQLITE_PATH)
     conn.execute("PRAGMA journal_mode=WAL")
     cursor = conn.cursor()
 
-    cursor.executescript("""
+    cursor.executescript(
+        """
         CREATE TABLE IF NOT EXISTS holdings (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id TEXT NOT NULL DEFAULT 'local',
@@ -67,7 +72,8 @@ def init_sqlite():
             value TEXT NOT NULL,
             PRIMARY KEY(user_id, key)
         );
-    """)
+        """
+    )
 
     conn.commit()
     conn.close()
@@ -75,7 +81,7 @@ def init_sqlite():
 
 @contextmanager
 def get_sqlite_conn():
-    """SQLite 연결 컨텍스트 매니저"""
+    """Yield a SQLite connection with automatic commit/rollback."""
     conn = sqlite3.connect(SQLITE_PATH)
     conn.row_factory = sqlite3.Row
     try:
@@ -88,33 +94,44 @@ def get_sqlite_conn():
         conn.close()
 
 
-# --- Supabase (배포용) ---
-
-_supabase_client = None
-
 def get_supabase():
-    """Supabase 클라이언트 싱글톤"""
+    """Return a singleton Supabase client."""
     global _supabase_client
+
+    supabase_key = SUPABASE_SERVICE_KEY or SUPABASE_KEY
+    if not SUPABASE_URL or not supabase_key:
+        raise RuntimeError("Supabase is not configured")
+
     if _supabase_client is None:
         from supabase import create_client
-        _supabase_client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+        _supabase_client = create_client(SUPABASE_URL, supabase_key)
     return _supabase_client
 
 
-# --- 통합 인터페이스 ---
-
 def init_db():
-    """앱 시작시 DB 초기화"""
+    """Initialize the configured backing store."""
     if DATABASE_MODE == "sqlite":
         init_sqlite()
-        print(f"[DB] SQLite initialized at {SQLITE_PATH}")
-    else:
-        print(f"[DB] Supabase mode - {SUPABASE_URL}")
 
 
 def get_db():
-    """현재 DB 모드에 맞는 연결 반환"""
+    """Return the active database connection/client."""
     if DATABASE_MODE == "sqlite":
         return get_sqlite_conn()
-    else:
-        return get_supabase()
+    return get_supabase()
+
+
+def check_db_health() -> dict:
+    """Return a lightweight readiness snapshot for the current DB mode."""
+    if DATABASE_MODE == "sqlite":
+        try:
+            with get_sqlite_conn() as conn:
+                conn.execute("SELECT 1").fetchone()
+            return {"mode": "sqlite", "ok": True}
+        except Exception as exc:
+            return {"mode": "sqlite", "ok": False, "error": repr(exc)}
+
+    supabase_key = SUPABASE_SERVICE_KEY or SUPABASE_KEY
+    configured = bool(SUPABASE_URL and supabase_key)
+    return {"mode": "supabase", "ok": configured, "configured": configured}
